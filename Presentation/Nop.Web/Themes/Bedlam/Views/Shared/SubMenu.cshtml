@@ -1,0 +1,89 @@
+﻿@using Nop.Core.Domain.Catalog;
+@using Nop.Core.Infrastructure;
+@using Nop.Services.Catalog;
+@using Nop.Web.Models.Catalog;
+
+@{
+    //current category ID
+    int currentCategoryId = 0;
+
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
+    }
+
+    //current product ID
+    int currentProductId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("product", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentProductId = Convert.ToInt32(Url.RequestContext.RouteData.Values["productId"].ToString());
+    }
+
+    var parent = HtmlHelpers.GetCategoryModels().FirstOrDefault(a => a.Id == currentCategoryId);
+
+    if (currentProductId > 0)
+    {
+        var product = HtmlHelpers.GetProduct(currentProductId);
+        if (product.ProductCategories != null && product.ProductCategories.Any())
+        {
+            parent = HtmlHelpers.GetCategoryModels().FirstOrDefault(a => a.Id == product.ProductCategories.FirstOrDefault().CategoryId);
+            if(parent != null)
+            {
+                parent = HtmlHelpers.GetCategoryModels().FirstOrDefault(a => a.Id == parent.ParentCategoryId);
+            }
+            else
+            {
+                parent = HtmlHelpers.GetParentCategoryModels().FirstOrDefault();
+                if (parent == null)
+                {
+                    parent = HtmlHelpers.GetCategoryModels().FirstOrDefault();
+                }
+            }          
+        }
+        else
+        {
+            parent = HtmlHelpers.GetParentCategoryModels().FirstOrDefault();
+            if (parent == null)
+            {
+                parent = HtmlHelpers.GetCategoryModels().FirstOrDefault();
+            }
+        }  
+    }
+    else if (parent == null)
+    {
+        parent = HtmlHelpers.GetParentCategoryModels().FirstOrDefault();
+        if (parent == null)
+        {
+            parent = HtmlHelpers.GetCategoryModels().FirstOrDefault();
+        }
+    }
+    else
+    {
+        while(parent.ParentCategoryId > 0)
+        {
+            parent = HtmlHelpers.GetCategoryModels().FirstOrDefault(a => a.Id == parent.ParentCategoryId);
+        }
+    }
+}   
+
+<div class="block block-manufacturer-navigation">
+        <div class="title">
+            @T(HtmlHelpers.Capitalise(parent.Name))
+        </div>
+        <div class="clear">
+        </div>
+        <div class="listbox">
+            <ul>
+                
+                @foreach (var item in HtmlHelpers.GetChildCategoryModels(parent.Id))
+                {
+                    <li class="@(item.IsActive ? "active" : "inactive")"><a href="@Url.RouteUrl("Category", new {categoryId = item.Id, item.SeName})">@item.Name</a>
+                    </li>
+                }
+
+            </ul>
+
+        </div>
+    </div>

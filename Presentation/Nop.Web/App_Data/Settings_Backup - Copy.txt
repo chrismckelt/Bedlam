@@ -1,0 +1,8 @@
+DataProvider: sqlserver
+DataConnectionString: Data Source=209.147.122.66,1558;Initial Catalog=Bedlam;User Id=BedlamUser;Password=grooverider;
+
+
+
+
+DataProvider: sqlserver
+DataConnectionString: Data Source=localhost;Initial Catalog=Bedlam;User Id=ShitUser;Password=grooverider;

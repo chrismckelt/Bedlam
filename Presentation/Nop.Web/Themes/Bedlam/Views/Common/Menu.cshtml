@@ -1,0 +1,23 @@
+﻿@model MenuModel
+
+@using Nop.Web.Models.Catalog
+@using Nop.Web.Models.Common;
+@Html.Action("WidgetsByZone", "Widget", new {widgetZone = "header_menu_before"})
+<ul class="topmenu">
+    
+    @foreach (var item in HtmlHelpers.GetParentCategoryModels())
+    {
+        var firstChild = HtmlHelpers.GetChildCategoryModels(item.Id).FirstOrDefault();
+        if (firstChild != null)
+        {
+            <li><a href="@Url.RouteUrl("Category", new {categoryId = firstChild.Id, firstChild.SeName})" title="@item.Name">
+                    @item.Name</a>
+            </li>
+        }
+    }
+    
+    <li>&nbsp</li>
+
+</ul>
+
+@Html.Action("WidgetsByZone", "Widget", new {widgetZone = "header_menu_after"})

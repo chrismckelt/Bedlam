@@ -1,0 +1,38 @@
+﻿
+@using Nop.Core.Domain.Catalog
+@using Nop.Web.Models.Catalog;
+@{
+    var random = new Random();
+    
+    int next = random.Next(0, HtmlHelpers.GetProducts().Count);
+    var productOverviewModels = new List<ProductOverviewModel>();
+
+    for (int i = 0; i < HtmlHelpers.GetProducts().Count; i++)
+    {
+        next = random.Next(0, 20);    
+        var prod = HtmlHelpers.GetProducts()[next];
+        productOverviewModels.Add(prod);
+    }
+}
+
+    <div class="block block-popular-tags">
+        <div class="title">
+              @T("Products.Tags.Popular")
+        </div>
+        <div class="clear">
+        </div>
+        <div class="listbox">
+            <div class="tags">
+                <ul>
+                    @foreach (var product in productOverviewModels)
+                    {
+                 
+                        <li>
+                            <a itemid="@product.Id" title="@product.Name" href="@Url.RouteUrl("Product", new { SeName = product.SeName })" class="hidden-text">&nbsp;&nbsp;@HtmlHelpers.Capitalise(@product.Name)</a> <br/>
+                        </li>
+                    }
+                </ul>
+            </div>
+
+        </div>
+    </div>

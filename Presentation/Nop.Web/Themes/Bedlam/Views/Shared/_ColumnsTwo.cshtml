@@ -1,0 +1,83 @@
+﻿@{
+    Layout = "~/Views/Shared/_Root.cshtml";
+}
+@{
+    //current category ID
+    int currentCategoryId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
+    }
+
+
+    //current manufacturer ID
+    int currentManufacturerId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("manufacturer", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentManufacturerId = Convert.ToInt32(Url.RequestContext.RouteData.Values["manufacturerId"].ToString());
+    }
+
+
+    //current product ID
+    int currentProductId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("product", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentProductId = Convert.ToInt32(Url.RequestContext.RouteData.Values["productId"].ToString());
+    }
+}
+<div class="master-wrapper-side-2">
+    @if (IsSectionDefined("left"))
+    {
+        @RenderSection("left")
+    }
+    else
+    {
+        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "left_side_column_before" })
+        <div class="clear">
+        </div>  
+        @Html.Action("CategoryNavigation", "Catalog", new { currentCategoryId = currentCategoryId, currentProductId = currentProductId })
+          @Html.Partial("SubMenu");
+        <div class="clear">
+        </div>
+        <div class="clear">
+        </div>
+        @Html.Action("ManufacturerNavigation", "Catalog", new { currentManufacturerId = currentManufacturerId })        
+        <div class="clear">
+        </div>
+        @Html.Action("NewsletterBox", "Newsletter")
+        <div class="clear">
+        </div>
+                   <div class="clear">
+        </div>
+        @Html.Partial("RandomProducts")
+
+         <div class="clear">
+        </div>
+        <div id="fb-root"></div>
+        <script>            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            } (document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/pages/Bedlam-bed-bath-body/235928446435590?fref=ts" data-send="false" data-width="200" data-show-faces="true" data-font="tahoma"style="width: 200px;"></div>
+
+        
+        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "left_side_column_after" })
+    }
+</div>
+<div class="master-wrapper-center-2">
+    <div class="master-wrapper-cph-2">
+        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "main_column_before" })
+        @RenderBody()
+        
+
+        @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "main_column_after" })
+    </div>
+</div>

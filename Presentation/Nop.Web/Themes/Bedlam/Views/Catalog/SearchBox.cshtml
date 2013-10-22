@@ -1,0 +1,59 @@
+﻿@model SearchBoxModel
+@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using Nop.Web.Framework
+@using Nop.Web.Models.Catalog;
+<div class="search-box">
+    @using (Html.BeginRouteForm("ProductSearch", FormMethod.Get, new { onsubmit = "return check_small_search_form()" }))
+    {
+        <ul>
+            <li>
+                <input type="text" class="search-box-text" id="small-searchterms" @(Model.AutoCompleteEnabled ? Html.Raw(" autocomplete=\"off\"") : null)
+                       value="Enter search..." name="q"  onfocus="if(this.value=='Enter search...')this.value=''" onblur="if(this.value=='') {this.value = 'Enter search...';}" />&nbsp;
+            </li>
+            <li>
+                <input type="submit" class="button-1 search-box-button" value="Go"  />
+            </li>
+        </ul>
+        <script type="text/javascript">
+
+            function check_small_search_form() {
+                var search_terms = $("#small-searchterms");
+                if (search_terms.val() == "") {
+                    alert('@Html.Raw(HttpUtility.JavaScriptStringEncode("Enter search...")))');
+                    search_terms.focus();
+                    return false;
+                }
+
+                return true;
+            }
+            @if (Model.AutoCompleteEnabled)
+            {
+                <text>
+                $(function () {
+                    $('#small-searchterms').autocomplete({
+                        delay: 500,
+                        minLength: 3,
+                        source: '@(Url.RouteUrl("ProductSearchAutoComplete"))',
+			            select: function( event, ui ) {
+				            $("#small-searchterms").val(ui.item.label);
+                            setLocation(ui.item.producturl);
+				            return false;
+			            }
+                    })
+                    .data("autocomplete")._renderItem = function( ul, item ) {
+                    var t = item.label;
+                    //html encode
+                    t = htmlEncode(t);
+                    return $("<li></li>")
+                    .data("item.autocomplete", item)
+                    .append("<a>@(Model.ShowProductImagesInSearchAutoComplete ? Html.Raw("<img src='\" + item.productpictureurl + \"'>") : null )" + t + "</a>")
+                    .appendTo(ul);
+                    };
+                });
+                </text>
+            }
+        </script>
+        @Html.Widget("searchbox")
+    }
+</div>

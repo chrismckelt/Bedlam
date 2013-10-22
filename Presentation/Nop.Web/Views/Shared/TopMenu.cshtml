@@ -1,0 +1,53 @@
+﻿@model IList<CategoryNavigationModel>
+@using Nop.Core.Domain.Catalog
+@using Nop.Core.Infrastructure
+@using Nop.Services.Catalog
+@using Nop.Web.Models.Catalog
+@using Telerik.Web.Mvc.UI
+@{
+    //current category ID
+    int currentCategoryId = 0;
+    if (Url.RequestContext.RouteData.Values["controller"].ToString().Equals("catalog", StringComparison.InvariantCultureIgnoreCase) &&
+        Url.RequestContext.RouteData.Values["action"].ToString().Equals("category", StringComparison.InvariantCultureIgnoreCase))
+    {
+        currentCategoryId = Convert.ToInt32(Url.RequestContext.RouteData.Values["categoryId"].ToString());
+    }
+}
+<div id="topmenu">
+@if (Model.Count > 0)
+{
+    <ul class="t-widget t-reset t-header t-menu" id="Menu">
+
+              @foreach (var item in Model)
+              {
+                <li class="t-item t-state-default" style="width: 175px; height: 25px;">
+                    <a itemid="@item.Id" title="@item.Name" href="@Url.RouteUrl("Category", new { categoryId = item.Id, SeName = item.SeName })" rel="Contents">&nbsp;&nbsp;@HtmlHelpers.Capitalise(@item.Name)</a>
+                    @{
+                     var children = HtmlHelpers.GetChildCategoryModels(item.Id);
+                    }
+                    @if (children.Any())
+                    {
+                        <ul class="t-group">
+                         @foreach (var child in children)
+                          {
+                               <li class="@HtmlHelpers.GetCssClass(currentCategoryId, child.Id, "t-highlighted") t-item t-state-default t-link" style="width: 175px; height: 25px;"><a itemid="@child.Id" title="@child.Name" href="@Url.RouteUrl("Category", new { categoryId = child.Id, SeName = child.SeName })" rel="Contents">@child.Name</a>
+                                    @{
+                                        var grand = HtmlHelpers.GetChildCategoryModels(child.Id);
+                                    }
+                                </li>
+                          }
+                        </ul>
+                    }
+                </li>
+              }
+    </ul>
+    
+}
+</div>
+
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        jQuery('#Menu').tMenu();
+    });
+</script>

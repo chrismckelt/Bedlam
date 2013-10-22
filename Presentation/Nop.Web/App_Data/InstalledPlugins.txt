@@ -1,0 +1,7 @@
+Payments.PayPalDirect
+Payments.PayInStore
+Payments.PayPalStandard
+PromotionFeed.Froogle
+Shipping.AustraliaPost
+Shipping.ByWeight
+

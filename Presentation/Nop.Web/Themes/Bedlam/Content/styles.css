@@ -1,0 +1,4218 @@
+﻿
+.foo {
+}
+body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: none repeat scroll 0 0 #777777;
+    color: #9A9A9A;
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+a {
+    color: #25587E;
+    text-decoration: none;
+}
+a:hover {
+    color: #3664A5;
+    text-decoration: underline;
+}
+img {
+    border: 0 none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+}
+h2, h3 {
+    font-size: 16px;
+}
+textarea {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+    width: 100%;
+}
+checkbox, input, radio, select, button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+}
+.master-wrapper-page {
+    margin: 0 auto;
+    width: 960px;
+}
+.master-wrapper-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 15px 0 0;
+    text-align: left;
+    width: 960px;
+}
+.master-wrapper-center-1 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline;
+    float: left;
+    width: 960px;
+}
+.master-wrapper-cph-1 {
+    color: #000000;
+    float: left;
+    min-height: 600px;
+    padding: 10px;
+    width: 940px;
+}
+.master-wrapper-side-2 {
+    display: inline;
+    float: left;
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    margin: 0 0 0 10px;
+    width: 180px;
+}
+.master-wrapper-center-2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline;
+    float: left;
+    margin: 0 0 0 10px;
+    width: 760px;
+}
+.master-wrapper-cph-2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    float: left;
+    min-height: 400px;
+    padding: 10px;
+    width: 740px;
+}
+.master-wrapper-leftside-3 {
+    border: 1px dotted #000000;
+    display: inline;
+    float: left;
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    margin: 0 0 0 5px;
+    width: 180px;
+}
+.master-wrapper-center-3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline;
+    float: left;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    width: 560px;
+}
+.master-wrapper-cph-3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+    float: left;
+    min-height: 400px;
+    padding: 10px;
+    width: 540px;
+}
+.master-wrapper-rightside-3 {
+    border: 1px dotted #000000;
+    display: inline;
+    float: right;
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    margin: 0 5px;
+    width: 180px;
+}
+.header {
+    height: 60px;
+    padding: 6px 6px 10px 5px;
+}
+.header .icon {
+    vertical-align: bottom;
+}
+.header .ico-register {
+    background: url("images/ico-register.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-login {
+    background: url("images/ico-login.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-logout {
+    background: url("images/ico-logout.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-inbox {
+    background: url("images/ico-inbox.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-cart {
+    background: url("images/ico-cart.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-wishlist {
+    background: url("images/ico-wishlist.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header .ico-admin {
+    background: url("images/ico-admin.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+.header-logo {
+    background-repeat: no-repeat;
+    float: left;
+    text-align: left;
+}
+a.logo {
+    background: url("images/BedlamTopLogo.jpg") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 58px;
+    padding: 0;
+    text-decoration: none;
+    width: 200px;
+}
+.header-selectors-wrapper {
+    float: right;
+    text-align: right;
+    width: 500px;
+}
+.header-currencyselector {
+    float: right;
+}
+.header-languageselector {
+    float: right;
+}
+.header-taxdisplaytypeselector {
+    float: right;
+}
+.header-links-wrapper {
+    float: right;
+    position: relative;
+    text-align: right;
+    width: 670px;
+}
+.header-links {
+    border: 1px solid #FFFFFF;
+    display: inline-table;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.header-links ul {
+    margin: 0;
+    padding: 0;
+}
+.header-links ul li {
+    display: inline;
+    list-style: none outside none;
+    padding-right: 2px;
+}
+.header-links a {
+    color: #3664A5;
+    text-decoration: none;
+}
+.header-links a:hover {
+    color: #3664A5;
+}
+.header-links a.account {
+    color: #3664A5;
+}
+.header-links span.impersonate {
+    color: #E44097;
+    font-weight: 700;
+}
+.header-links span.impersonate .finish-impersonation {
+    color: #58DE81;
+}
+.headermenu {
+    background: none repeat scroll 0 0 #A02C16;
+    color: #FFFFFF;
+    height: 100%;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 8px 5px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.headermenu ul {
+    margin: 0;
+    padding: 0;
+}
+.headermenu li {
+    display: inline;
+    list-style: none outside none;
+    white-space: nowrap;
+}
+.headermenu a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.search-text {
+    border: 1px solid #EEEEEE;
+    font-size: 12px;
+    padding: 5px 0 5px 5px;
+    vertical-align: top;
+    width: 100%;
+}
+.search-box {
+    background: none repeat scroll 0 0 #F6F6F4;
+    border-radius: 3px 3px 3px 3px;
+    display: inline;
+    float: left;
+    width: auto;
+}
+.search-box ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.search-box ul li {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.search-box-text {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E3E3E3;
+    font-size: 12px;
+    padding: 4px 5px;
+    vertical-align: top;
+    width: 300px;
+}
+.search-box-button {
+    background: none repeat scroll 0 0 #F6F6F4;
+    border: 1px solid #D3D3D3;
+    border-radius: 2px 2px 2px 2px;
+    color: #353434;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 4px 5px;
+    width: 70px;
+}
+.search-box .ui-autocomplete-loading {
+    background: url("images/ajax_loader_small.gif") no-repeat scroll right center white;
+}
+.ui-autocomplete {
+    z-index: 10 !important;
+}
+.ui-autocomplete .ui-menu-item a {
+    text-align: left !important;
+}
+.headermenu ul.topmenu {
+    text-align: right;
+}
+.footer {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-top: 4px solid #666666;
+    clear: both;
+    height: 35px;
+    padding: 5px;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer-disclaimer {
+    float: right;
+    font-size: 11px;
+}
+.footer-poweredby {
+    float: left;
+    font-size: 11px;
+}
+.footer-storetheme {
+    float: right;
+    font-size: 11px;
+    margin: 0 100px 0 10px;
+}
+.changedevice {
+    clear: both;
+    text-align: right;
+}
+.nobr {
+    white-space: nowrap !important;
+}
+.wrap {
+    white-space: normal !important;
+}
+.a-left {
+    text-align: left !important;
+}
+.a-center {
+    text-align: center !important;
+}
+.a-right {
+    text-align: right !important;
+}
+.page-title {
+    border-bottom: 1px solid;
+    margin: 0 0 10px;
+    overflow: hidden;
+    width: 100%;
+}
+.page-title h1, .page-title h2 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 5px 5px 5px 0;
+}
+.page-title .title {
+    float: left;
+    text-align: left;
+}
+.page-title .rss {
+    float: right;
+    text-align: right;
+}
+td {
+    vertical-align: middle;
+}
+td.fieldname {
+    font-size: 12px;
+}
+.table-container {
+}
+.table-container .row {
+}
+.table-container .row .item-name {
+    display: block;
+    padding: 3px 10px 0 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.table-container .row .item-value {
+    padding: 3px 0 0;
+    vertical-align: middle;
+}
+.ajax-loading-block-window {
+    height: 128px;
+    left: 50%;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    width: 128px;
+    z-index: 1104;
+}
+.ajax-loading-block-window .loading-image {
+    background-image: url("images/ajax_loader_large.gif");
+    height: 128px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 128px;
+}
+.data-table {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+}
+.data-table th {
+    font-weight: bold;
+    padding: 3px 8px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.data-table td {
+    padding: 3px 8px;
+}
+.data-table th, .data-table td {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+}
+.data-table .odd {
+}
+.data-table .even {
+    background-color: #F4FAFF;
+}
+.htmlcontent {
+    padding-bottom: 5px;
+}
+.htmlcontent-title {
+    clear: both;
+    padding: 0 0 5px;
+}
+.htmlcontent-header {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.htmlcontent-body {
+}
+.topicpage {
+}
+.topicpage .topicpage-body {
+}
+.user-agreement-page {
+}
+.user-agreement-page .page-title {
+}
+.user-agreement-page .page-body {
+}
+.clear {
+    border: medium none;
+    clear: both;
+    float: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+.message-error {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.validation-summary-errors {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.field-validation-error {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.required {
+    color: red;
+}
+.copyright {
+    float: right;
+    font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    padding-right: 10px;
+}
+.copyright a {
+    background-color: inherit;
+    color: #3664A5;
+}
+.captcha-box {
+}
+.sitemap-page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.sitemap-page .entity {
+    margin: 5px 0 30px;
+}
+.sitemap-page .topic-box, .sitemap-page .manufacturer-box, .sitemap-page .category-box, .sitemap-page .product-box {
+    text-align: center;
+    vertical-align: bottom;
+}
+.sitemap-page .topic-box .item, .sitemap-page .manufacturer-box .item, .sitemap-page .category-box .item, .sitemap-page .product-box .item {
+    border-bottom: 1px dotted #ADACAC;
+    margin: 3px 10px;
+    text-align: left;
+    width: 150px;
+}
+.eu-cookie-law {
+    text-align: left;
+}
+a.eu-cookie-privacyinfo-tag {
+    color: #3664A5 !important;
+    text-decoration: underline;
+}
+.searchtext {
+    border: 1px solid #D3D3D3;
+    font-size: 12px;
+    vertical-align: top;
+    width: 100%;
+}
+.searchboxtext {
+    border: 1px solid #E3E3E3;
+    font-size: 12px;
+    width: 110px;
+}
+.accountsignaturetext {
+    border: 1px solid #E3E3E3;
+    height: 100px;
+    vertical-align: top;
+    width: 500px;
+}
+.forumtopictitletext, .pmtitletext {
+    border: 1px solid #ACACAC;
+    font-size: 12px;
+    vertical-align: top;
+    width: 500px;
+}
+.forumposttext, .bbeditortext {
+    height: 300px;
+    width: 100%;
+}
+.privatemessagesubjecttext {
+    border: 1px solid #ACACAC;
+    font-size: 12px;
+    vertical-align: top;
+    width: 500px;
+}
+.forumsearchtext {
+    border: 1px solid #ACACAC;
+    font-size: 14px;
+    width: 500px;
+}
+.forumsearchboxtext {
+    border: 1px solid #ACACAC;
+    font-size: 12px;
+}
+.bbeditortext {
+    border: 1px solid #CEC6B5;
+}
+.edittopiclinkbutton {
+    background: url("images/ico-edit.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.deletetopiclinkbutton {
+    background: url("images/ico-delete.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.movetopiclinkbutton {
+    background: url("images/ico-move-topic.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.replytopiclinkbutton {
+    background: url("images/ico-forum-post-add.gif") no-repeat scroll 0 0 transparent;
+    padding-bottom: 3px;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.watchtopiclinkbutton {
+    background: url("images/ico-forum-watch.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+}
+.editpostlinkbutton {
+    background: url("images/ico-edit.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.deletepostlinkbutton {
+    background: url("images/ico-delete.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 18px;
+    padding-right: 5px;
+}
+.quotepostlinkbutton, .postlink {
+    border: 1px solid #CCCCCC;
+    color: #555555;
+    float: right;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 1px 3px;
+}
+.postlink {
+    border: medium none;
+    margin-right: 5px;
+    padding: 1px 3px;
+}
+.searchboxbutton {
+    margin-bottom: 2px;
+}
+.productlistproductdetailbutton, .productgridproductdetailbutton {
+    margin-bottom: 3px;
+    background: none repeat scroll 0 0 #F6F6F4;
+    border: 1px solid #D3D3D3;
+    border-radius: 2px 2px 2px 2px;
+    color: #353434;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 4px 5px;
+    width: 70px;
+}
+.searchbutton, .search-button, .contactusbutton, .newsitemaddcommentbutton, .blogpostaddcommentbutton, .productvariantaddtocartbutton, .productwritereviewbutton, .loginbutton, .registerbutton, .checkoutasguestbutton, .savecustomerinfobutton, .addaddressbutton, .changepasswordbutton, .registernextstepbutton, .completeregistrationbutton, .passwordrecoverybutton, .newpasswordbutton, .saveaddressbutton, .sendemailafriendbutton, .cartbutton, .checkoutbutton, .selectshippingaddressbutton, .newaddressnextstepbutton, .selectbillingaddressbutton, .sameasshippingaddressbutton, .shippingmethodnextstepbutton, .paymentmethodnextstepbutton, .paymentinfonextstepbutton, .confirmordernextstepbutton, .submitforumtopicbutton, .submitpmbutton, .replypmbutton, .deleteselectedpmbutton, .reorderbutton, .minicartcheckoutbutton, .newsletterbox-subscribebutton, .useragreementbutton, .deleteselectedfsbutton, .submitreturnrequestbutton, .uploadavatarbutton, .checkavailabilitybutton, .subscribebutton, .continue-shopping-button, .update-cart-button, .checkout-button, .estimate-shipping-button, .apply-discount-coupon-code-button, .checkout-as-guest-button, .register-button, .login-button, .cart-button, .register-next-step-button, .new-address-next-step-button, .shipping-method-next-step-button, .payment-info-next-step-button, .confirm-order-next-step-button, .product-box-add-to-cart-button, .newsletter-subscribe-button, .button-1, .button-2 {
+     margin-bottom: 3px;
+    background: none repeat scroll 0 0 #F6F6F4;
+    border: 1px solid #D3D3D3;
+    border-radius: 2px 2px 2px 2px;
+    color: #353434;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 4px 5px;
+
+}
+.productlistaddtocartbutton, .productgridaddtocartbutton, .productemailafriendbutton, .productaddtocomparelistbutton, .productvariantaddtowishlistbutton, .editaddressbutton, .deleteaddressbutton, .cancelrecurringorderbutton, .orderdetailsbutton, .returnitemsbutton, .orderdetailsprintbutton, .estimateshippingbutton, .updatewishlistbutton, .applycouponcodebutton, .updatecartbutton, .continueshoppingbutton, .orderprocessedcontinuebutton, .submitpollvotebutton, .cancelforumtopicbutton, .forumsearchbutton, .forumsearchboxbutton, .cancelpmbutton, .deletepmbutton, .backpmbutton, .removeavatarbutton {
+     margin-bottom: 3px;
+    background: none repeat scroll 0 0 #F6F6F4;
+    border: 1px solid #D3D3D3;
+    border-radius: 2px 2px 2px 2px;
+    color: #353434;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 4px 5px;
+
+}
+ul.languagelist {
+    display: inline;
+    line-height: 25px;
+}
+ul.languagelist li {
+    display: inline;
+    list-style: none outside none;
+    padding: 0 5px;
+}
+ul.languagelist li .selected {
+    border: 1px solid #CCCCCC !important;
+}
+ul.languagelist li:hover {
+    cursor: pointer;
+}
+.storethemelist {
+    border: 1px solid #E3E3E3;
+}
+.forumtopicoptionscheck {
+}
+.forumtopicoptionscheck label {
+    color: #555555;
+    font-size: 0.9em;
+    padding-left: 5px;
+    vertical-align: top;
+}
+.noscript {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFF90;
+    border-color: #DDDDDD;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 1px;
+    color: #2F2F2F;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+}
+.pager {
+    text-align: center;
+}
+.pager a {
+    color: #555555;
+    font-size: 1em;
+}
+.pager a:link {
+    text-align: center;
+}
+.pager span {
+    color: #3664A5;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.block {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+.block .title {
+    background-color: #A02C16;
+    color: White;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 4px 8px;
+}
+.block .listbox {
+    font-size: 11px;
+    line-height: 18px;
+    margin: 0;
+    padding: 5px 10px 10px;
+}
+.block .listbox ul {
+    background-color: inherit;
+    color: #3664A5;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.block a {
+}
+.block li {
+    list-style: none outside none;
+}
+.block li.separator {
+    background: none repeat scroll 0 0 #E8E6D2;
+    height: 1px;
+    margin: 5px 0;
+    width: 140px;
+}
+.block-category-navigation, .block-manufacturer-navigation, .block-recently-viewed-products, .block-info, .block-newsletter, .block-popular-tags, .block-popular-blogtags, .block-blog-archive, .block-poll, .block-account-navigation {
+}
+.block-category-navigation .active a, .block-manufacturer-navigation .active a {
+}
+.block-category-navigation .listbox ul .active, .block-manufacturer-navigation .listbox ul .active {
+    font-weight: 700;
+}
+.block-category-navigation .listbox ul .inactive, .block-manufacturer-navigation .listbox ul .inactive {
+}
+.block-account-navigation a.active {
+    font-weight: 700;
+}
+.block-account-navigation a {
+    white-space: nowrap;
+}
+.block-account-navigation a.inactive {
+}
+.block-manufacturer-navigation .listbox .viewall a {
+}
+.block-newsletter .options {
+    margin-top: 5px;
+}
+.block-newsletter .buttons {
+    margin-top: 5px;
+}
+.block-recently-viewed-products a:hover {
+}
+.block-popular-tags li, .block-popular-blogtags li {
+    display: inline !important;
+}
+.block-popular-tags .listbox .viewall a {
+}
+.block-blog-archive .year {
+    font-weight: 700;
+}
+#flyout-cart {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    float: left;
+    min-height: 50px;
+    position: absolute;
+    right: 0;
+    top: 19px;
+    width: 300px;
+    z-index: 99999;
+}
+#flyout-cart.active {
+    display: block;
+}
+.minishoppingcart {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C1C1C1;
+    color: #000000;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px 10px 10px;
+}
+.minishoppingcart a {
+    color: #3664A5;
+    font-weight: 700;
+    text-decoration: none;
+}
+.minishoppingcart .count {
+    margin: 10px 0;
+}
+.minishoppingcart .items {
+    overflow: hidden;
+}
+.minishoppingcart .items table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.minishoppingcart .items table .first td {
+    border-top: 1px solid #EEEEEE;
+}
+.minishoppingcart .items table td {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 10px 5px;
+    vertical-align: top;
+}
+.minishoppingcart .items .item {
+    border-bottom: 1px solid #CFCFCF;
+    margin: 5px 0;
+}
+.minishoppingcart .items .item .product .name {
+    clear: both;
+}
+.minishoppingcart .items .item .product .attributes {
+    font-size: 10px;
+    margin: 0;
+}
+.minishoppingcart .items .item .price {
+    font-size: 10px;
+    margin: 10px 0 0;
+}
+.minishoppingcart .items .item .quantity {
+    font-size: 10px;
+    margin: 0;
+}
+.minishoppingcart .totals {
+    margin: 10px 0;
+    text-align: right;
+}
+.minishoppingcart .buttons {
+    margin: 10px 0;
+    text-align: right;
+}
+.minishoppingcart .cartbutton {
+    margin: 0 5px;
+}
+.minishoppingcart .checkoutbutton {
+    margin: 0 5px;
+}
+.bar-notification {
+    display: none;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
+.bar-notification.success {
+    background: none repeat scroll 0 0 #91BD09;
+    border-bottom: 3px solid #FFFFFF !important;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.bar-notification.error {
+    background: none repeat scroll 0 0 #CC0000;
+    border-bottom: 3px solid #FFFFFF !important;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.bar-notification .close {
+    cursor: pointer;
+    float: right;
+    margin: 9px 9px 0 0;
+}
+.bar-notification p.content {
+    padding: 0 10px;
+}
+.shoppingcart-page, .wishlist-page {
+}
+.shoppingcart-page .page-title, .wishlist-page .page-title {
+    border-bottom: 0 none;
+}
+.shoppingcart-page .body, .wishlist-page .body {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.order-summary-content {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 10px;
+}
+.wishlist-content {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+}
+.order-summary-content .totals {
+    float: right;
+    padding: 23px 5px 0;
+    width: 330px;
+}
+.order-summary-content .cart-collaterals {
+    padding: 20px 0 10px;
+    width: 550px;
+}
+.order-summary-content .deals {
+    display: inline;
+    float: left;
+    margin: 0 20px 0 0;
+    width: 250px;
+}
+.order-summary-content .shipping {
+    display: inline;
+    float: left;
+    margin: 0;
+    width: 280px;
+}
+.order-summary-content .coupon-box, .order-summary-content .giftcard-box {
+    background: none repeat scroll 0 0 #F7F5E8;
+    border: 1px dotted #D3D3D3;
+    color: #555555;
+    font-size: 11px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+.order-summary-content .coupon-box .current-code {
+}
+.order-summary-content .giftcard-box {
+    position: relative;
+    z-index: 1;
+}
+.order-summary-content .coupon-box .discountcouponcode, .order-summary-content .giftcard-box .giftcardcouponcode {
+    width: 125px;
+}
+.order-summary-content .cart, .wishlist-content .cart {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.wishlist-content .cart {
+    margin-bottom: 25px;
+}
+.order-summary-content .cart td, .wishlist-content .cart td {
+    padding: 10px;
+}
+.order-summary-content .cart .cart-header-row, .wishlist-content .cart .cart-header-row {
+    font-weight: 700;
+}
+.order-summary-content .cart .cart-header-row th, .wishlist-content .cart .cart-header-row th {
+    background: url("images/cart_line_y.gif") repeat-y scroll right center transparent;
+    padding: 2px 8px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.order-summary-content .cart .cart-header-row th.picture, .wishlist-content .cart .cart-header-row th.picture {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+.order-summary-content .cart .cart-header-row th.end, .wishlist-content .cart .cart-header-row th.end {
+    background: none repeat scroll 0 0 transparent;
+    padding-right: 5px;
+}
+.order-summary-content .cart .cart-item-row, .wishlist-content .cart .cart-item-row {
+}
+.order-summary-content .cart .cart-item-row td, .wishlist-content .cart .cart-item-row td {
+    background: url("images/cart_line_y.gif") repeat-y scroll right center transparent;
+    border-top: 1px dotted #C5C5C5;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.order-summary-content .cart .cart-item-row td.productpicture, .wishlist-content .cart .cart-item-row td.productpicture {
+    background: none repeat scroll 0 0 transparent;
+    padding: 5px;
+}
+.order-summary-content .cart .cart-item-row td.product, .wishlist-content .cart .cart-item-row td.product {
+    padding: 0 10px;
+    text-align: left;
+}
+.order-summary-content .cart .cart-item-row td.end, .wishlist-content .cart .cart-item-row td.end {
+    background: none repeat scroll 0 0 transparent;
+    border-top: 1px dotted #C5C5C5;
+    color: Green;
+    font-weight: 700;
+    text-align: right;
+}
+.order-summary-content .cart .cart-item-row .qty-input, .wishlist-content .cart .cart-item-row .qty-input {
+    border: 1px solid #E3E3E3;
+    font-size: 12px;
+    text-align: right;
+    width: 40px;
+}
+.order-summary-content .total-info {
+    margin: 0;
+}
+.order-summary-content .total-info .selected-shipping-method {
+    font-size: 11px;
+    font-weight: normal;
+}
+.cart_total_left {
+    color: #353434;
+    font-weight: 700;
+    height: 21px;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+.cart_total_left_below {
+    height: 30px;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.cart_total_right {
+    padding-left: 5px;
+    text-align: right;
+    vertical-align: middle;
+}
+.order-summary-content .removegiftcardbutton, .order-summary-content .removediscountbutton {
+    background: url("images/ico-delete.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 15px;
+    padding-left: 18px;
+    padding-right: 5px;
+    width: 32px;
+}
+.order-summary-content .removegiftcardbutton:hover, .order-summary-content .removediscountbutton:hover {
+    cursor: pointer;
+}
+.order-summary-content .selected-checkout-attributes {
+    color: #353434;
+    margin: 0;
+    padding: 10px 0;
+    text-align: right;
+    vertical-align: middle;
+    width: 100%;
+}
+.order-summary-content .checkout-attributes {
+    background: none repeat scroll 0 0 #F7F5E8;
+    border: 1px dotted #D3D3D3;
+    margin: 10px 0;
+    padding: 10px 20px;
+}
+.order-summary-content .checkout-attributes .textprompt {
+    font-weight: bold;
+}
+.order-summary-content .checkout-attributes .textbox {
+    width: 300px;
+}
+.order-summary-content .checkout-attributes textarea {
+    height: 150px;
+    width: 300px;
+}
+.order-summary-content .min-amount-warning {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+.order-summary-content .terms-of-service {
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+.order-summary-content .terms-of-service .read {
+    text-decoration: underline;
+}
+.order-summary-content .terms-of-service .read:hover {
+    cursor: pointer;
+}
+.order-summary-content .common-buttons {
+    float: left;
+    margin: 0;
+    padding: 10px 10px 10px 0;
+}
+.order-summary-content .checkout-buttons {
+    float: right;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+}
+.order-summary-content .addon-buttons {
+    clear: both;
+    float: right;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    text-align: right;
+}
+.order-summary-content .crosssells-title {
+    border-bottom: 0 none;
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 5px 5px 5px 0;
+    width: 100%;
+}
+.estimate-shipping {
+    background: none repeat scroll 0 0 #F7F5E8;
+    border: 1px dotted #D3D3D3;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 10px;
+}
+.estimate-shipping .country-input, .estimate-shipping .state-input {
+    width: 137px;
+}
+.estimate-shipping .zip-input {
+}
+.estimate-shipping .shipping-options {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.estimate-shipping .shipping-options .shipping-option-item {
+    padding: 5px 0 0 5px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.estimate-shipping .shipping-options .shipping-option-item .option-name {
+    font-weight: 700;
+}
+.estimate-shipping .shipping-options .shipping-option-item .option-description {
+    padding: 5px 0 5px 16px;
+}
+.checkout-page, .checkout-one-page {
+}
+.checkout-page .page-title, .checkout-one-page .page-title {
+    border-bottom: 0 none;
+}
+.checkout-page .checkout-data, .checkout-one-page .checkout-data {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.checkoutstep {
+}
+.checkoutstep .steptitle {
+    background-color: #2E4D7B;
+    border: 1px solid #2F4F4F;
+    color: #FFFFFF;
+    font-family: Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    padding: 5px;
+}
+.checkoutstep .stepcontent {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #2F4F4F #2F4F4F;
+    border-image: none;
+    border-right: 1px dashed #2F4F4F;
+    border-style: none dashed dashed;
+    border-width: medium 1px 1px;
+    padding: 5px;
+}
+.order-summary-title {
+    clear: both;
+    color: #555555;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.order-summary-body {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .select-address-title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.checkout-data .address-grid {
+    margin-bottom: 15px;
+    padding: 0;
+}
+.checkout-data .address-grid .item-box {
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.checkout-data .address-grid .address-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+.checkout-data .address-grid .address-item .select-button {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.checkout-data .address-grid .address-item .address-box {
+    text-align: left;
+}
+.checkout-data .enter-address-title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.checkout-data .enter-address {
+    border: 1px solid #D7D7D7;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+}
+.checkout-data .enter-address .enter-address-body {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .enter-address .buttons {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .enter-address .the-same-address {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .shipping-options {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .shipping-options .shipping-option-item {
+    padding: 5px 0 0 5px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.checkout-data .shipping-options .shipping-option-item .option-name {
+    font-weight: 700;
+}
+.checkout-data .shipping-options .shipping-option-item .option-description {
+    padding: 5px 0 5px 16px;
+}
+.checkout-data .shipping-options .select-button {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .shipping-options .message-error {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .userewardpoints {
+    background: none repeat scroll 0 0 #F7F5E8;
+    border: 1px dotted #D3D3D3;
+    color: #555555;
+    font-size: 11px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+.checkout-data .payment-methods {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .payment-methods .payment-method-item {
+    padding: 10px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.checkout-data .payment-methods .select-button {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .payment-methods .message-error {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.checkout-data .payment-info {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .payment-info .body {
+    padding: 10px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.checkout-data .payment-info .select-button {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .confirm-order {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .confirm-order .select-button {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .confirm-order .message-error {
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .order-completed {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: left;
+}
+.checkout-data .order-completed .body {
+    padding: 10px;
+    text-align: left;
+    vertical-align: text-top;
+}
+.checkout-data .order-completed .select-button {
+    margin: 10px;
+    text-align: left;
+}
+.order-details {
+}
+.order-details .page-title {
+    border-bottom: 0 none;
+    text-align: left;
+}
+.order-details .page-title .print-buttons {
+    text-align: right;
+}
+.order-details .info {
+    border: 1px solid #E8E6D2;
+    padding: 10px;
+}
+.order-details .section-title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.order-details .order-overview {
+    padding-bottom: 10px;
+    text-align: left;
+}
+.order-details .order-overview .order-total-top {
+    text-align: right;
+}
+.order-details .order-details-box {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.order-details .order-overview .order-overview-table, .order-details .order-details-box .order-details-table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.order-details .order-details-box .order-details-table .billinginfo, .order-details .order-details-box .order-details-table .shippinginfo {
+    vertical-align: top;
+    width: 50%;
+}
+.order-details .products-box, .order-details .shipments-box, .order-details .ordernotes-box {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.order-details .checkout-attributes {
+    height: auto;
+    padding: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+.order-details .cart_total_left {
+    color: #000000;
+}
+.shipment-details {
+}
+.shipment-details .page-title {
+    border-bottom: 0 none;
+    text-align: left;
+}
+.shipment-details .info {
+    border: 1px solid #E8E6D2;
+    padding: 10px;
+}
+.shipment-details .section-title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.shipment-details .overview {
+    padding-bottom: 10px;
+    text-align: left;
+}
+.shipment-details .trackingurl {
+}
+.shipment-details .products-box, .shipment-details .shipmentstatusevents-box {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.downloadable-products {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.downloadable-products .info {
+    padding: 10px;
+}
+.order-progress {
+    border-bottom: 2px solid #F3F3F3;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.order-progress ul {
+    margin: 0;
+    padding: 0;
+}
+.order-progress ul li {
+    display: inline;
+    list-style: none outside none;
+    padding: 5px 20px 0;
+}
+.order-progress ul li .active-step {
+    background: url("images/progress-step-active.gif") no-repeat scroll 50% 50% transparent;
+    color: #6A6A6A;
+    padding-bottom: 40px;
+    padding-right: 1px;
+}
+.order-progress ul li .inactive-step {
+    background: url("images/progress-step-inactive.gif") no-repeat scroll 50% 50% transparent;
+    color: #D7D7D7;
+    padding-bottom: 40px;
+    padding-right: 1px;
+}
+.return-request {
+}
+.return-request .page-title {
+    border-bottom: 0 none;
+}
+.return-request .section-addinfo {
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.return-request .products-box {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.return-request .why {
+}
+.return-request .why .return-reasons {
+}
+.return-request .why .return-actions {
+}
+.return-request .why .comment {
+    height: 150px;
+    width: 350px;
+}
+.return-request .buttons {
+}
+.customer-return-request-list {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.customer-return-request-list .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.customer-return-request-list .request-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.opc .buttons {
+    margin-top: 0;
+    padding-top: 2em;
+}
+.opc .buttons .back-link small {
+    display: none;
+}
+.opc .buttons .back-link a {
+    background: url("images/arrow-up.png") no-repeat scroll 0 50% transparent;
+    padding-left: 20px;
+}
+.opc .buttons.disabled button {
+    display: none;
+}
+.opc .buttons .please-wait {
+    height: 21px;
+    line-height: 21px;
+}
+.opc .ul {
+    list-style: disc outside none;
+    padding-left: 18px;
+}
+.opc ul, .opc ol, ul.opc, ol.opc {
+    list-style: none outside none;
+}
+.opc {
+    position: relative;
+}
+.opc li.section {
+}
+.opc .step-title {
+    background: none repeat-x scroll 0 100% #EEEEEE;
+    border-color: #FFFFFF #D9DDE3 #D9DDE3;
+    border-style: solid;
+    border-width: 0 1px;
+    padding: 4px 8px 6px;
+    text-align: right;
+}
+.opc .step-title .number {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #999999;
+    float: left;
+    font: bold 11px/14px arial,helvetica,sans-serif;
+    margin: 0 5px 0 0;
+    padding: 0 4px;
+}
+.opc .step-title h2 {
+    color: #999999;
+    float: left;
+    font: bold 13px/16px Arial,Helvetica,sans-serif;
+    margin: 0;
+}
+.opc .allow .step-title {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D0DCE1;
+    border-color: #A3AEB3 #A3AEB3 -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px 0;
+    color: #A4B3B9;
+    cursor: pointer;
+}
+.opc .allow .step-title .number {
+    background: none repeat scroll 0 0 #DBE6EB;
+    border-color: #DBE6EB;
+    color: #A4B3B9;
+}
+.opc .allow .step-title h2 {
+    color: #A4B3B9;
+}
+.opc .active .step-title {
+    background: none repeat scroll 0 0 #F9F3E3;
+    border: 1px solid #BBAFA0;
+    color: #F18200;
+    cursor: default;
+    padding-bottom: 5px;
+}
+.opc .active .step-title .number {
+    background: none repeat scroll 0 0 #3664A5;
+    color: #FFFFFF;
+}
+.opc .active .step-title h2 {
+    color: #3664A5;
+}
+.opc .step {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat-x scroll 0 0 #FBFAF6;
+    border-color: -moz-use-text-color #BBAFA0 #BBAFA0;
+    border-image: none;
+    border-right: 1px solid #BBAFA0;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    padding: 15px 30px;
+    position: relative;
+}
+.opc .step-title:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.home-page-product-grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+.home-page-product-grid .title {
+    border-bottom: 1px solid #C4C6C8;
+    clear: both;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 5px 10px;
+    padding: 10px 0 1px;
+    text-align: center;
+}
+.home-page-category-grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+.home-page-category-grid a {
+}
+.home-page-category-grid .item-box {
+    text-align: center;
+    vertical-align: text-top;
+}
+.home-page-category-grid .category-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+.home-page-category-grid .category-item .title {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    height: 1.8em;
+    overflow: hidden;
+    padding: 8px 0 5px;
+    text-align: center;
+}
+.home-page-category-grid .category-item .picture {
+    padding: 10px 0;
+    text-align: center;
+}
+.bestsellers {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+.bestsellers .title {
+    border-bottom: 1px solid #C4C6C8;
+    clear: both;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 5px 10px;
+    padding: 10px 0 1px;
+    text-align: center;
+}
+.product-grid {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 520px;
+}
+.product-grid .item-box {
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.product-grid .product-item {
+    border: 1px solid #E8E6D2;
+    margin: 10px 5px;
+    text-align: center;
+    width: 250px;
+}
+.product-grid .product-item .product-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.product-grid .product-item .product-title a {
+    color: #3A4045;
+    display: block;
+    height: 2em;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 4px 10px 8px 0;
+}
+.product-grid .product-item .picture {
+    margin-top: 10px;
+    text-align: center;
+}
+.product-grid .product-item .description {
+    border-top: 1px solid #E8E6D2;
+    color: #555555;
+    height: 50px;
+    margin: 5px 5px 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+.product-grid .product-item .add-info {
+    background: none repeat scroll 0 0 #F7F5E8;
+    height: 85px;
+    position: relative;
+    text-align: right;
+    vertical-align: bottom;
+    width: 250px;
+}
+.product-grid .product-item .add-info .prices {
+    bottom: 15px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+.product-grid .product-item .add-info .buttons {
+    bottom: 15px;
+    left: 10px;
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+}
+.product-grid .product-item .add-info .prices .productPrice, .product-price {
+    color: green;
+}
+.product-grid .product-item .add-info .prices .oldproductPrice {
+    color: Red;
+    text-decoration: line-through;
+}
+.product-grid .item-box {
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.product-grid .small-product-item {
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+.product-grid .small-product-item .product-title {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.product-grid .small-product-item .picture {
+    text-align: center;
+}
+.product-list {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 520px;
+}
+.product-list .item-box {
+    clear: both;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+}
+.product-list .product-item {
+    border: 1px solid #E8E6D2;
+    height: 177px;
+    margin-top: 10px;
+    position: relative;
+    width: 520px;
+}
+.product-list .product-item .product-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.product-list .product-item .product-title a {
+    color: #3A4045;
+    display: block;
+    height: 2em;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 4px 10px 8px 0;
+}
+.product-list .product-item .picture {
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+.product-list .product-item .description {
+    border-left: 1px solid #E8E6D2;
+    color: #555555;
+    margin: 10px 150px 0 140px;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+.product-list .product-item .add-info {
+    bottom: 20px;
+    float: right;
+    position: absolute;
+    right: 5px;
+    text-align: right;
+}
+.product-list .product-item .prices {
+}
+.product-list .product-item .prices .productPrice {
+    color: green;
+}
+.product-list .product-item .prices .oldproductPrice {
+    color: Red;
+    text-decoration: line-through;
+}
+.product-list .product-item .buttons {
+    padding-top: 20px;
+}
+.featured-product-grid {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 520px;
+}
+.featured-product-grid .title {
+    clear: both;
+    color: #3A4045;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 10px 5px 0;
+}
+.featured-product-grid .item-box {
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.featured-product-grid .product-item {
+    border: 1px solid #E8E6D2;
+    margin: 10px 5px;
+    text-align: center;
+    width: 250px;
+}
+.featured-product-grid .product-item .product-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0 0 0 10px;
+    text-transform: none;
+}
+.featured-product-grid .product-item .product-title a {
+    display: block;
+    height: 2em;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 4px 10px 8px 0;
+}
+.featured-product-grid .product-item .picture {
+    margin-top: 10px;
+    text-align: center;
+}
+.featured-product-grid .product-item .description {
+    border-top: 1px solid #E8E6D2;
+    color: #555555;
+    height: 50px;
+    margin: 5px 5px 0;
+    padding: 10px 5px;
+    text-align: center;
+}
+.featured-product-grid .product-item .add-info {
+    height: 85px;
+    position: relative;
+    text-align: right;
+    vertical-align: bottom;
+    width: 250px;
+}
+.featured-product-grid .product-item .add-info .prices {
+    bottom: 15px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    vertical-align: middle;
+}
+.featured-product-grid .product-item .add-info .buttons {
+    bottom: 15px;
+    left: 10px;
+    position: absolute;
+    text-align: left;
+    vertical-align: middle;
+}
+.featured-product-grid .product-item .add-info .prices .productPrice {
+    color: green;
+}
+.featured-product-grid .product-item .add-info .prices .oldproductPrice {
+    color: Red;
+    text-decoration: line-through;
+}
+.category-page, .manufacturer-page, .manufacturerlist-page, .producttag-page, .producttagall-page {
+}
+.category-page .page-title, .manufacturerlist-page .page-title, .manufacturer-page .page-title, .producttag-page .page-title, .producttagall-page .page-title {
+    border-bottom: 0 none;
+}
+.producttagall-page .producttags-list li {
+    display: inline;
+}
+.producttagall-page .producttags-list li a {
+    margin: 0 2px 0 0;
+}
+.category-page .category-description, .manufacturer-page .manufacturer-description {
+    color: #0A263C;
+    font-size: 1.1em;
+}
+.sub-category-grid, .manufacturer-grid {
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+.sub-category-grid a, .manufacturer-grid a {
+}
+.sub-category-grid .item-box, .manufacturer-grid .item-box {
+    text-align: center;
+    vertical-align: text-top;
+}
+.sub-category-grid .sub-category-item, .manufacturer-grid .manufacturer-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
+}
+.sub-category-grid .sub-category-item .category-title, .manufacturer-grid .manufacturer-item .man-title {
+    display: block;
+    font-size: 0.9em;
+    font-weight: 700;
+    height: 1.8em;
+    overflow: hidden;
+    padding: 8px 0 5px;
+    text-align: center;
+}
+.sub-category-grid .sub-category-item .picture, .manufacturer-grid .manufacturer-item .picture {
+    padding: 10px 0;
+    text-align: center;
+}
+.product-sorting {
+    float: left;
+    margin: 0 auto 10px;
+}
+.product-viewmode {
+    float: right;
+    margin: 0 auto 10px;
+}
+.product-page-size {
+    margin: 0 auto;
+    text-align: center;
+    width: 165px;
+}
+.product-filters {
+    background: none repeat scroll 0 0 #F7F5E8;
+    border: 1px solid #E8E6D2;
+    margin: 0 auto;
+    width: 520px;
+}
+.product-filters .filter-title {
+    color: #3A4045;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.product-filters .filter-title span {
+    display: block;
+    height: 2em;
+    line-height: 1.3em;
+    overflow: hidden;
+    padding: 4px 10px 8px 0;
+}
+.product-filters .filter-item {
+    padding: 5px 10px;
+}
+.price-range-filter {
+}
+.price-range-filter .title {
+    background: url("images/ico-arrow-r.gif") no-repeat scroll 0 0 transparent;
+    color: #555555;
+    font-weight: 700;
+    padding: 1px 0 5px 20px;
+}
+.price-range-filter ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.price-range-filter li {
+    list-style: none outside none;
+    padding-bottom: 2px;
+}
+.price-range-filter .selected-price-range {
+    padding-left: 20px;
+}
+.price-range-filter .remove-price-range-filter {
+    font-weight: 700;
+}
+.product-spec-filter {
+}
+.product-spec-filter .title {
+    background: url("images/ico-arrow-r.gif") no-repeat scroll 0 0 transparent;
+    color: #555555;
+    font-weight: 700;
+    padding: 1px 0 5px 20px;
+}
+.product-spec-filter table.filter {
+    width: 100%;
+}
+.product-spec-filter table.filter tr.group {
+    font-weight: 700;
+}
+.product-spec-filter table.filter tr.item td {
+    padding: 2px 2px 2px 16px;
+}
+.product-spec-filter table.filter tr.filtereditem {
+}
+.product-spec-filter .remove-filter {
+    padding-left: 20px;
+}
+.product-spec-filter .remove-product-spec-filter {
+    font-weight: 700;
+}
+.compare-products {
+}
+.compare-products .page-title {
+    border-bottom: 0 none;
+}
+.compare-products .body {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.compare-products-table {
+    width: 100%;
+}
+.compare-products-table .remove-button {
+    margin: 5px 5px 5px 0;
+}
+.compare-products-table tr.product-name {
+    background-color: #CCCCCC;
+    font-weight: 700;
+}
+.compare-products-table td {
+    border-color: #BFBFBF;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px;
+    vertical-align: top;
+}
+.login-page {
+}
+.login-page .page-title {
+    border-bottom: 0 none;
+}
+.login-page .wrapper {
+    color: #555555;
+    font-size: 11px;
+    margin-top: 10px;
+    padding-left: 5px;
+    width: 720px;
+}
+.login-page .wrapper .new-wrapper {
+    float: left;
+    width: 50%;
+}
+.login-page .wrapper .new-wrapper .register-title {
+    font-weight: 700;
+    margin: 0 10px;
+    text-align: left;
+}
+.login-page .wrapper .new-wrapper .register-block {
+    border: 1px solid #E8E6D2;
+    margin: 10px;
+    min-height: 240px;
+    padding: 15px 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.login-page .wrapper .new-wrapper .checkout-as-guest-or-register-block {
+    border: 1px solid #E8E6D2;
+    margin: 10px;
+    min-height: 240px;
+    padding: 15px 5px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+.login-page .wrapper .new-wrapper .buttons {
+    padding-right: 20px;
+    padding-top: 20px;
+    text-align: right;
+}
+.login-page .wrapper .returning-wrapper {
+    float: right;
+    width: 50%;
+}
+.login-page .wrapper .returning-wrapper .login-title {
+    font-weight: 700;
+    margin: 0 10px;
+    text-align: center;
+}
+.login-page .wrapper .returning-wrapper .buttons {
+    clear: both;
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.login-page .wrapper .returning-wrapper .login-block {
+    border: 1px solid #E8E6D2;
+    margin: 10px;
+    min-height: 240px;
+    padding: 15px 5px 5px;
+    text-align: left;
+}
+.login-table-container {
+    vertical-align: middle;
+}
+.login-table-container .row {
+}
+.login-table-container .row .item-name {
+    display: block;
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.login-table-container .row .item-value {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+.login-page .forgot-password {
+    font-weight: 700;
+}
+.external-auth-errors {
+    border: 1px solid #E8E6D2;
+    color: Red;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.external-auth-association {
+    border: 1px solid #E8E6D2;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.external-auth-association .identifier {
+}
+.external-auth-association .remove {
+    color: #3664A5;
+}
+.registration-page {
+}
+.registration-page .page-title {
+    border-bottom: 0 none;
+}
+.registration-page .body {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.registration-page .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.registration-page .section-body {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.registration-page .buttons {
+    clear: both;
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.availablestatus {
+    color: green;
+    padding-left: 5px;
+}
+.notavailablestatus {
+    color: red;
+    padding-left: 5px;
+}
+.password-recovery-page, newsletter-page {
+}
+.password-recovery-page .page-title, newsletter-page .page-title {
+    border-bottom: 0 none;
+}
+.password-recovery-page .body, newsletter-page .body {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.email, .password, .single-line {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E3E3E3;
+    font-size: 12px;
+    padding: 4px 5px;
+    vertical-align: top;
+    width: 300px;
+}
+.password-recovery-page .email {
+    width: 250px;
+}
+.customer-avatar {
+    padding: 10px;
+}
+.customer-avatar .buttons {
+    margin: 5px 0;
+}
+.account-activation-page {
+}
+.account-activation-page .page-title {
+    border-bottom: 0 none;
+}
+.account-activation-page .body {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.address-edit-page {
+}
+.address-edit-page .page-title {
+    border-bottom: 0 none;
+}
+.address-edit-page .body {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.search-panel {
+}
+.search-panel .page-title {
+    border-bottom: 0 none;
+}
+.search-panel .search-input {
+    border: 1px solid #E8E6D2;
+    padding: 10px;
+}
+.search-panel .search-input .buttons {
+    text-align: right;
+}
+.search-panel .search-results {
+    padding-top: 10px;
+}
+.search-panel .search-results .result {
+    color: #555555;
+    font-weight: 700;
+}
+.search-panel table.basic-search, .search-panel table.adv-search {
+    border-collapse: collapse;
+    color: #333333;
+    margin: 0;
+    table-layout: fixed;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+.search-panel table.adv-search {
+    border-top: 1px solid #D3D3D3;
+    margin-top: 10px;
+}
+.search-panel table.adv-search #Cid {
+    width: 374px;
+}
+.search-panel table.basic-search td.title, .search-panel table.adv-search td.title {
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+    width: 130px;
+}
+.search-panel table.basic-search td.data, .search-panel table.adv-search td.data {
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.search-panel table.adv-search .price-from, .search-panel table.adv-search .price-to {
+    width: 100px;
+}
+.search-input .warning {
+    text-decoration: underline;
+}
+.contact-form {
+}
+.contact-form .buttons {
+    text-align: right;
+}
+.contact-form .send-email {
+}
+.contact-form .send-email .fullname {
+    width: 250px;
+}
+.contact-form .send-email .email {
+    width: 250px;
+}
+.contact-form .send-email .enquiry {
+    height: 150px;
+    width: 350px;
+}
+.breadcrumb {
+    float: left;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 0;
+}
+.breadcrumb a {
+    color: #3A4045;
+    text-decoration: none;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+.newslist, .newslist-homepage {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+.newslist-homepage .page-title {
+    border-bottom: 1px solid #C4C6C8;
+    clear: both;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 0 5px 10px;
+    padding: 10px 0 1px;
+    text-transform: capitalize;
+}
+.newsitems {
+    margin: 0 5px;
+    padding: 0;
+}
+.newsitems .item {
+    border-bottom: 1px dashed #C4C6C8;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.newsitems .newsdate {
+    color: #9A9A9A;
+    font-style: italic;
+}
+.newsitems a.newstitle {
+    color: #555555;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.newsitems a.newstitle:hover {
+    text-decoration: underline;
+}
+.newsitems .newsdetails {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.newsitems .readmore {
+    background-color: inherit;
+    color: #3664A5;
+    font-weight: 700;
+    text-decoration: none;
+}
+.newsitem {
+}
+.newsitem .page-title {
+    border-bottom: 0 none;
+}
+.newsitem .newsdate {
+    color: #9A9A9A;
+    font-style: italic;
+}
+.newsitem .newsbody {
+    margin: 0;
+    padding: 0;
+}
+.newsitem .result {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.newscomments {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+.newscomments .title {
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+}
+.newscomments .newcomment {
+    margin: 0;
+    padding: 0;
+}
+.newscomments .newcomment td.leavetitle {
+    color: #3A3A3A;
+    font-weight: 700;
+    padding: 0 10px 10px 0;
+}
+.newscomments .newcomment td.buttons {
+    text-align: right;
+}
+.newscomments .newcomment .commenttitle {
+    width: 350px;
+}
+.newscomments .newcomment .commenttext {
+    height: 150px;
+    width: 350px;
+}
+.newscomments .commentlist {
+    border-top: 1px solid #E3E3E3;
+    margin-top: 10px;
+}
+.newscomment {
+}
+.newscomment .commentinfo {
+    border-right: 1px solid #F3F3F3;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    width: 170px;
+}
+.newscomment .commentinfo .userinfo {
+    padding-top: 5px;
+}
+.newscomment .commentinfo .userinfo a.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.newscomment .commentinfo .userinfo span.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.newscomment .commentinfo .userinfo .avatar {
+    margin: 5px 0;
+}
+.newscomment .commentinfo .userinfo .avatar .avatar-img {
+    border: 2px solid #CEDBE1 !important;
+}
+.newscomment .commentinfo .userinfo .userstats {
+    color: #555555;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+}
+.newscomment .commentinfo .userinfo .userstats .statvalue {
+    font-weight: 400;
+}
+.newscomment .commentcontent {
+    border-left: 1px solid #F3F3F3;
+    margin-left: 180px;
+}
+.newscomment .commentcontent .commenttime {
+    background: none repeat scroll 0 0 #E3F3F3;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 3px;
+}
+.newscomment .commentcontent .commenttime .statvalue {
+    font-weight: 400;
+}
+.newscomment .commentcontent .commenttitle {
+    font-weight: 700;
+    padding: 3px;
+}
+.newscomment .commentcontent .commentbody {
+    padding: 3px;
+}
+.blog {
+}
+.blog .page-title {
+}
+.blog .blogposts .post .blogdate {
+    color: #9A9A9A;
+    font-style: italic;
+}
+.blog .blogposts .post a.blogtitle {
+    color: #444444;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.blog .blogposts .post a.blogtitle:hover {
+    text-decoration: underline;
+}
+.blog .blogposts {
+    margin: 0 5px;
+    padding: 0;
+}
+.blog .blogposts .post {
+    border-bottom: 1px dashed #C4C6C8;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.blog .blogposts .blogbody, .blog .blogposts .tags {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.blog .blogposts .blogdetails {
+    background-color: inherit;
+    color: #3664A5;
+    font-weight: 700;
+    text-decoration: none;
+}
+.blogpost {
+}
+.blogpost .page-title {
+    border-bottom: 0 none;
+}
+.blogpost .postdate {
+    color: #9A9A9A;
+    font-style: italic;
+}
+.blogpost .postbody, .blogpost .tags {
+    margin: 0;
+    padding: 0;
+}
+.blogpost .result {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.blogcomments {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+.blogcomments .title {
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+}
+.blogcomments .newcomment {
+    margin: 0;
+    padding: 0;
+}
+.blogcomments .newcomment .commenttext {
+    height: 150px;
+    width: 350px;
+}
+.blogcomments .newcomment td.leavetitle {
+    font-weight: 700;
+    padding: 0 10px 10px 0;
+}
+.blogcomments .newcomment td.buttons {
+    text-align: right;
+}
+.blogcomments .commentlist {
+    background-color: inherit;
+    border-top: 1px solid #E3E3E3;
+    color: #555D65;
+    font-size: 11px;
+    margin: 10px 0 0;
+    padding: 0;
+}
+.blogcomment {
+}
+.blogcomment .commentinfo {
+    border-right: 1px solid #F3F3F3;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    width: 170px;
+}
+.blogcomment .commentinfo .userinfo {
+    padding-top: 5px;
+}
+.blogcomment .commentinfo .userinfo a.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.blogcomment .commentinfo .userinfo span.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.blogcomment .commentinfo .userinfo .avatar {
+    margin: 5px 0;
+}
+.blogcomment .commentinfo .userinfo .avatar .avatar-img {
+    border: 2px solid #CEDBE1 !important;
+}
+.blogcomment .commentinfo .userinfo .userstats {
+    color: #555555;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+}
+.blogcomment .commentinfo .userinfo .userstats .statvalue {
+    font-weight: 400;
+}
+.blogcomment .commentcontent {
+    border-left: 1px solid #F3F3F3;
+    margin-left: 180px;
+}
+.blogcomment .commentcontent .commenttime {
+    background: none repeat scroll 0 0 #E3F3F3;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 3px;
+}
+.blogcomment .commentcontent .commenttime .statvalue {
+    font-weight: 400;
+}
+.blogcomment .commentcontent .commentbody {
+    padding: 3px;
+}
+.todays-poll-box {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-left: 0;
+}
+.todays-poll-box .title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+    text-transform: capitalize;
+}
+.todays-poll-box .todays-poll-box-block {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.todays-poll-box .poll-item {
+    float: left;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.block-poll .poll-item {
+    background-color: inherit;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
+.poll-item label {
+    margin: 0 0 0 5px;
+}
+.poll-take-poll, .poll-results {
+    border: 1px dashed #666666;
+    margin-top: 10px;
+    padding: 5px;
+}
+.poll-display-text {
+    font-weight: 700;
+}
+.poll-total-votes {
+    font-style: italic;
+}
+.emailafriend-page {
+}
+.emailafriend-page .page-title {
+    border-bottom: 0 none;
+}
+.emailafriend-page .send-email {
+    border: 1px solid #E8E6D2;
+    margin-top: 10px;
+    padding: 0 0 10px 10px;
+}
+.emailafriend-page .send-email .product {
+    font-weight: 700;
+}
+.emailafriend-page .send-email .friendemail {
+    width: 350px;
+}
+.emailafriend-page .send-email .youremail {
+    width: 350px;
+}
+.emailafriend-page .send-email .personalmessage {
+    height: 150px;
+    width: 350px;
+}
+.recently-added-products {
+}
+.recently-added-products .page-title {
+}
+.recently-viewed-products {
+}
+.recently-viewed-products .page-title {
+}
+.account-page {
+}
+.account-page .page-title {
+    border-bottom: 0 none;
+}
+.account-page .body {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.customer-info-box {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.customer-info-box .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.customer-info-box .section-body {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.customer-info-box .buttons {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+.customer-addresses {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.customer-addresses .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.customer-addresses .address-list {
+}
+.customer-addresses .address-list .buttons {
+    text-align: right;
+}
+.customer-addresses .address-list .address-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.customer-addresses .add-button {
+    float: right;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: right;
+}
+.customer-orders {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.customer-orders .recurring-payments {
+    clear: both;
+    padding: 10px 10px 5px 0;
+    width: 100%;
+}
+.customer-orders .recurring-payments .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.customer-orders .recurring-payments .recurring-payments-box {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+}
+.customer-orders .order-list {
+}
+.customer-orders .order-list .order-item {
+    border: 1px solid #E8E6D2;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.customer-orders .order-list .order-item .buttons {
+    text-align: right;
+}
+.customer-pass-recovery {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    padding: 5px;
+}
+.customer-pass-recovery .result {
+    color: red;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.customer-rewardpoints {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.customer-rewardpoints .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.customer-rewardpoints .reward-points-overview {
+    padding: 10px 10px 5px 0;
+    width: 100%;
+}
+.customer-rewardpoints .reward-points-history {
+    background-color: inherit;
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.backinstock-subscriptions-box {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.backinstock-subscriptions-box .buttons {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+.bissgridpagerstyle {
+    background: none repeat scroll 0 0 #EEEEEE;
+    padding: 5px;
+    vertical-align: middle;
+}
+.bissgridpagerstyle span {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.product-details-page {
+    border: 1px solid #C4C6C8;
+    margin-top: 10px;
+    padding: 10px;
+}
+.product-collateral {
+    clear: both;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product-essential {
+}
+.product-details-info {
+}
+.product-details-info .picture {
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    width: 300px;
+}
+.product-details-info .picture .picturethumbs {
+    margin-top: 10px;
+}
+.product-details-info .overview {
+    border: 1px dashed #C4C6C8;
+    float: right;
+    margin-right: 15px;
+    margin-top: 25px;
+    padding: 5px;
+    width: 230px;
+}
+.product-details-info .overview .productname {
+    color: #3664A5;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+.product-details-info .overview .shortdescription, .product-details-info .overview .manufacturers, .product-details-info .overview .sku, .product-details-info .overview .manufacturerpartnumber, .product-details-info .overview .stock, .product-details-info .overview .gtin {
+    color: #555555;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+}
+.backinstocksubscription {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product-details-info .fulldescription {
+    border-top: 1px solid #E8E6D2;
+    clear: both;
+    color: #555555;
+    margin-bottom: 0.3em;
+}
+.product-share-button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.product-reviews-overview {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.product-reviews-overview .product-review-box {
+    height: 13px;
+    margin-right: 5px;
+    width: 69px;
+}
+.product-review-box .rating {
+    background: url("images/star_x_inactive.gif") repeat-x scroll 0 0 transparent;
+    height: 13px;
+    width: 55px;
+}
+.product-review-box .rating div {
+    background: url("images/star_x_active.gif") repeat-x scroll 0 0 transparent;
+    height: 12px;
+}
+.product-reviews-overview .product-review-links .separator {
+    margin: 0 2px;
+}
+.product-reviews-overview .product-review-links {
+    margin: 0;
+}
+.product-no-reviews {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.product-no-reviews a {
+}
+.product-reviews-page {
+}
+.product-reviews-page .page-title {
+    border-bottom: 0 none;
+}
+.product-reviews-page .page-title a {
+    border-bottom: 0 none;
+    text-decoration: underline;
+}
+.product-reviews-page .write-review {
+}
+.product-reviews-page .write-review .review-title {
+    width: 350px;
+}
+.product-reviews-page .write-review .review-text {
+    height: 150px;
+    width: 350px;
+}
+.product-review-list {
+    margin: 30px 0 0;
+}
+.product-review-list .product-review-item {
+    border: 1px solid #D3D3D3;
+    clear: both;
+    margin: 10px 0 0;
+    padding: 10px 10px 20px;
+}
+.product-review-list .product-review-item .review-title {
+    float: left;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.product-review-list .product-review-item .product-review-box {
+    float: right;
+    height: 13px;
+    margin-right: 5px;
+    width: 69px;
+}
+.product-review-list .product-review-item .review-text {
+    float: left;
+    margin-bottom: 5px;
+}
+.product-review-list .product-review-item .review-info {
+    float: left;
+    margin-bottom: 5px;
+}
+.product-review-list .product-review-item .review-info .separator {
+    margin: 0 2px;
+}
+.product-review-helpfulness {
+    clear: both;
+    color: #333333;
+    font-size: 11px;
+}
+.product-review-helpfulness .vote {
+    color: #3664A5;
+    font-weight: 700;
+    text-decoration: none;
+}
+.product-review-helpfulness .vote:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.product-variant-list {
+    margin-bottom: 15px;
+    padding: 0;
+}
+.product-variant-line {
+    border-bottom: 1px dashed #C4C6C8;
+    clear: both;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.product-variant-line .picture {
+    float: left;
+    margin-bottom: 15px;
+    width: 300px;
+}
+.product-variant-line .overview {
+    float: left;
+    margin-right: 25px;
+    width: 200px;
+}
+.product-variant-line .overview .productname, .variant-name {
+    color: #3664A5;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+.product-variant-line .description {
+    clear: both;
+    color: #555555;
+    margin-bottom: 0.3em;
+}
+.product-details-page .downloadsample {
+    clear: both;
+    color: #555555;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.product-details-page .downloadsample .downloadsamplebutton {
+    background: url("images/btn_download_bg.gif") repeat-x scroll 0 100% #F1F1F1;
+    border: 1px solid #B5B5B5;
+    color: #444444;
+    cursor: pointer;
+    font-family: arial,sans-serif !important;
+    font-size: 11px !important;
+    font-size-adjust: none !important;
+    font-stretch: normal !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    overflow: visible;
+    padding: 1px 5px;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+    width: auto;
+}
+.product-variant-line .price {
+    float: left;
+    margin-right: 30px;
+    padding: 10px;
+}
+.product-essential .price {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.product-variant-line .price .productPrice, .product-essential .price .productPrice {
+    color: green;
+}
+.product-variant-line .price .oldProductPrice, .product-essential .price .oldProductPrice {
+    color: red;
+    text-decoration: line-through;
+}
+.product-variant-line .add-info {
+    background: none repeat scroll 0 0 #F7F5E8;
+    min-height: 17px;
+    padding: 10px;
+}
+.product-variant-line .add-info .enter-price-input, .product-essential .add-info .enter-price-input {
+    width: 60px;
+}
+.product-variant-line .add-info .qty-input, .product-essential .add-info .qty-input {
+    width: 40px;
+}
+.product-variant-line .attributes {
+}
+.product-variant-line .attributes .textprompt {
+    font-weight: bold;
+}
+.product-variant-line .attributes .textbox {
+    width: 300px;
+}
+.product-variant-line .attributes textarea {
+    height: 150px;
+    width: 300px;
+}
+.product-variant-line .stock, .product-variant-line .sku, .product-variant-line .manufacturerpartnumber, .product-variant-line .gtin {
+}
+.product-variant-line .giftcard {
+}
+.product-variant-line .giftcard dt {
+    clear: left;
+    float: left;
+    width: 150px;
+}
+.product-variant-line .giftcard .recipientname {
+}
+.product-variant-line .giftcard .recipientemail {
+}
+.product-variant-line .giftcard .sendername {
+}
+.product-variant-line .giftcard .senderemail {
+}
+.product-variant-line .giftcard .message {
+    height: 100px;
+    width: 300px;
+}
+.related-products-grid, .also-purchased-products-grid {
+}
+.related-products-grid .title, .also-purchased-products-grid .title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+    text-transform: capitalize;
+}
+.related-products-grid .item-box, .also-purchased-products-grid .item-box {
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+.related-products-grid .item, .also-purchased-products-grid .item {
+    border: 1px solid #E8E6D2;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    width: 200px;
+}
+.related-products-grid .item .product-title, .also-purchased-products-grid .item .product-title {
+    font-size: 1em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+    text-transform: none;
+}
+.related-products-grid .item .picture, .also-purchased-products-grid .item .picture {
+    text-align: center;
+}
+.productspec-box {
+}
+.productspec-box .title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+    text-transform: capitalize;
+}
+.productspec-box .productspec-list {
+}
+.producttags-box {
+    color: #555555;
+    padding: 5px;
+}
+.producttags-box .title {
+    clear: both;
+    font-weight: 700;
+    padding: 10px 10px 10px 0;
+    text-transform: capitalize;
+}
+.producttags-box .producttags-list {
+}
+.producttags-box .producttags-list a {
+    text-decoration: underline;
+}
+.producttags-box .producttags-list .producttags-wrapper {
+    float: left;
+}
+.tier-prices {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.tier-prices .prices-header {
+    background: none repeat scroll 0 0 #7692B9;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 3px;
+}
+.tier-prices .prices table {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.tier-prices .prices .prices-table td {
+    padding: 0;
+}
+.tier-prices .prices .item-table td {
+    border-bottom: 3px solid #D7D7D7;
+    font-weight: 700;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.tier-prices .prices .item-table .item-price {
+    color: Green;
+}
+.tier-prices .prices .header-table td {
+    border-bottom: 3px solid #D7D7D7;
+    font-weight: 700;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.tier-prices .prices .prices-table .field-header {
+    font-weight: 700;
+    text-align: center;
+}
+#lbOverlay {
+    background-color: #000000;
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#lbCenter, #lbBottomContainer {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999;
+}
+.lbLoading {
+    background: url("images/loading.gif") no-repeat scroll center center #FFFFFF;
+}
+#lbImage {
+    background-repeat: no-repeat;
+    border: 10px solid #FFFFFF;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#lbPrevLink, #lbNextLink {
+    display: block;
+    outline: medium none;
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+#lbPrevLink {
+    left: 0;
+}
+#lbPrevLink:hover {
+    background: url("images/prevlabel.gif") no-repeat scroll 0 15% transparent;
+}
+#lbNextLink {
+    right: 0;
+}
+#lbNextLink:hover {
+    background: url("images/nextlabel.gif") no-repeat scroll 100% 15% transparent;
+}
+#lbBottom {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #FFFFFF;
+    border-image: none;
+    border-right: 10px solid #FFFFFF;
+    border-style: none solid solid;
+    border-width: 10px;
+    color: #666666;
+    font-size: 10px;
+    line-height: 1.4em;
+    text-align: left;
+}
+#lbCloseLink {
+    background: url("images/closelabel.gif") no-repeat scroll center center transparent;
+    display: block;
+    float: right;
+    height: 22px;
+    margin: 5px 0;
+    outline: medium none;
+    width: 66px;
+}
+#lbCaption, #lbNumber {
+    margin-right: 71px;
+}
+#lbCaption {
+    font-weight: 700;
+}
+.sendpmbox {
+    background-color: #EEEEEE;
+    border: 1px solid #A0A0A0;
+    color: #555555;
+    display: block;
+    float: left;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 2px 0 2px 2px;
+    padding: 2px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.sendpmbox .pmlinkbutton {
+    background: url("images/ico-pm.png") no-repeat scroll 0 0 transparent;
+    line-height: 14px;
+    padding: 2px 6px 2px 18px;
+}
+.privatemessagesend {
+}
+.privatemessagesend .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.privatemessagesend .wrapper {
+    padding: 5px;
+}
+.privatemessagesend table.postmessage {
+    border-collapse: collapse;
+    vertical-align: middle;
+    width: 100%;
+}
+.privatemessagesend table.postmessage td {
+    padding: 4px;
+}
+.privatemessagesend table.postmessage td.fieldname {
+    color: #555555;
+    font-weight: 700;
+    width: 20%;
+}
+.privatemessagesend table.postmessage td.options {
+    text-align: right;
+}
+.privatemessageview {
+}
+.privatemessageview .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.privatemessageview .wrapper {
+    padding: 5px;
+}
+.privatemessageview table.viewmessage {
+    border-collapse: collapse;
+    vertical-align: middle;
+    width: 100%;
+}
+.privatemessageview table.viewmessage td {
+    padding: 4px;
+}
+.privatemessageview table.viewmessage td.fieldname {
+    color: #555555;
+    font-weight: 700;
+    width: 20%;
+}
+.privatemessageview table.viewmessage a {
+    color: #3664A5;
+    text-decoration: underline;
+}
+.privatemessageview table.viewmessage td.options {
+    text-align: right;
+}
+.private-messages-page {
+}
+.private-messages-page .page-title {
+    border-bottom: 0 none;
+}
+.private-messages-page .body {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+.private-messages-box {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.private-messages-box .section-title {
+    clear: both;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 10px 5px 0;
+}
+.private-messages-box .buttons {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+.pmgridtablestyle {
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-family: arial;
+    font-size: 11px;
+    margin-left: 0;
+    width: 100%;
+}
+.pmgridtablestyle td a {
+    display: block;
+    text-decoration: none;
+}
+.pmgridaltrowstyle {
+    background-color: #F4FAFF;
+}
+.pmgridheaderstyle th {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #676767;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.pmgridrowstyle td, .pmgridaltrowstyle td {
+    border-right: 1px solid gray;
+    padding: 4px 10px;
+}
+.pmgridpagerstyle, .latestpostsgridpagerstyle, .fsgridpagerstyle {
+    background: none repeat scroll 0 0 #EEEEEE;
+    padding: 5px;
+    vertical-align: middle;
+}
+.pmgridpagerstyle span, .latestpostsgridpagerstyle span, .fsgridpagerstyle span {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.pmread {
+}
+.pmunread {
+    font-weight: 700;
+}
+.forumsmain {
+}
+.forumsmain .forumsmainheader {
+    border-bottom: 1px solid #F3F3F3;
+    height: 35px;
+}
+.forumsmain .forumsmainheader .currenttime {
+    color: #555555;
+    float: left;
+    font-size: 0.9em;
+    padding-top: 20px;
+}
+.forumsmain .forumsmainheader .forumsearchbox {
+    float: right;
+    text-align: right;
+}
+.forumsmain .activediscussions {
+    margin-top: 50px;
+}
+.forumbreadcrumb {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    padding: 0;
+    text-transform: capitalize;
+}
+.forumbreadcrumb a {
+    color: #3A3A3A;
+    text-decoration: none;
+}
+.forumbreadcrumb a:hover {
+    color: #3664A5;
+    text-decoration: none;
+}
+.forumgrouppage .forumsearchbox {
+    text-align: right;
+}
+.forumgroup {
+}
+.forumgroup .grouptitle a {
+    font-weight: 700;
+}
+.forumgroup table.groups {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.forumgroup table.groups td {
+    padding: 3px 0;
+}
+.forumgroup tr.groupheader {
+    font-weight: 700;
+}
+.forumgroup tr.groupheader td {
+    background: none repeat scroll 0 0 #7692B9;
+    border-right: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    height: 20px;
+}
+.forumgroup tr.groupheader td.forumname {
+    padding-left: 3px;
+    text-align: left;
+    width: 55%;
+}
+.forumgroup tr.groupheader td.topics {
+    width: 10%;
+}
+.forumgroup tr.groupheader td.posts {
+    width: 10%;
+}
+.forumgroup tr.groupheader td.lastpost {
+    width: 25%;
+}
+.forumgroup tr.forum td.image div {
+    background: url("images/ico-forum.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forumgroup tr.forum td {
+    border-bottom: 1px solid #C5C5C5;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.forumgroup tr.forum td.forumname {
+    text-align: left;
+    width: 55%;
+}
+.forumgroup tr.forum td.forumname .forumtitle {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 18px;
+}
+.forumgroup tr.forum td.forumname .forumdescription {
+    color: #555555;
+    font-size: 0.9em;
+}
+.forumgroup tr.forum td.lastpost {
+    color: #555555;
+    font-size: 0.8em;
+}
+.forum-subscriptions-box {
+    color: #555555;
+    font-size: 11px;
+    margin: 0;
+    padding: 5px;
+}
+.forum-subscriptions-box .buttons {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+.forum {
+}
+.forum .forumheader {
+}
+.forum .top .foruminfo {
+    float: left;
+}
+.forum .top .foruminfo .forumname {
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 25px;
+}
+.forum .top .foruminfo .forumdescription {
+    color: #555555;
+}
+.forum .top .actions {
+    float: right;
+    text-align: right;
+}
+.forum .top .actions .newtopic {
+    background: url("images/ico-forum-post-add.gif") no-repeat scroll 0 0 transparent;
+    padding: 0 10px 3px 20px;
+}
+.forum .top .actions .watchforum {
+    background: url("images/ico-forum-watch.gif") no-repeat scroll 0 0 transparent;
+    padding-left: 20px;
+}
+.forum .top .actions .forumsearchbox {
+    padding-top: 5px;
+}
+.forum .topicsgroup {
+}
+.forum table.topics {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.forum table.topics td {
+    padding: 3px 0;
+}
+.forum table.topics tr.forumheader {
+    font-weight: 700;
+}
+.forum table.topics tr.forumheader td {
+    background: none repeat scroll 0 0 #7692B9;
+    border-right: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    height: 20px;
+}
+.forum table.topics tr.forumheader td.topicname {
+    padding-left: 3px;
+    text-align: left;
+    width: 55%;
+}
+.forum table.topics tr.forumheader td.replies {
+    width: 10%;
+}
+.forum table.topics tr.forumheader td.views {
+    width: 10%;
+}
+.forum table.topics tr.forumheader td.lastpost {
+    width: 25%;
+}
+.forum table.topics tr.topic td {
+    border-bottom: 1px solid #C5C5C5;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.forum table.topics tr.topic td.image div {
+    background: url("images/ico-forum.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forum table.topics tr.topic td.topicname {
+    text-align: left;
+    width: 55%;
+}
+.forum table.topics tr.topic td.topicname .topictype {
+    font-size: 0.9em;
+    line-height: 18px;
+}
+.forum table.topics tr.topic td.topicname .topictitle {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 18px;
+}
+.forum table.topics tr.topic td.topicname .topicstarter {
+    color: #555555;
+    font-size: 0.9em;
+}
+.forum table.topics tr.topic td.topicname .topicspager {
+    color: #555555;
+    font-size: 0.9em;
+}
+.forum table.topics tr.topic td.lastpost {
+    color: #555555;
+    font-size: 0.8em;
+}
+.forum table.topics tr.topic .post {
+    background: url("images/ico-forum-post.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forum table.topics tr.topic .postannoucement, .forum table.topics tr.topic .poststicky {
+    background: url("images/ico-forum-post-high.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forum .pager {
+    padding: 5px 3px 5px 0;
+    text-align: right;
+}
+.postedit {
+}
+.postedit .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.postedit .wrapper {
+    padding: 5px;
+}
+.postedit table.posttopic {
+    border-collapse: collapse;
+    vertical-align: middle;
+    width: 100%;
+}
+.postedit table.posttopic td {
+    padding: 4px;
+}
+.postedit table.posttopic td.fieldname {
+    color: #555555;
+    font-weight: 700;
+    width: 20%;
+}
+.postedit table.posttopic td.options {
+    text-align: right;
+}
+.moveforumtopic {
+}
+.moveforumtopic .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.moveforumtopic .wrapper {
+    padding: 5px;
+}
+.moveforumtopic table.movetopic {
+    border-collapse: collapse;
+    vertical-align: middle;
+    width: 100%;
+}
+.moveforumtopic table.movetopic td {
+    padding: 4px;
+}
+.moveforumtopic table.movetopic td.fieldname {
+    color: #555555;
+    font-weight: 700;
+    white-space: nowrap;
+    width: 30%;
+}
+.moveforumtopic table.movetopic td.options {
+    text-align: left;
+}
+.forumtopic {
+}
+.forumtopic .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.forumtopic .title .topicname {
+    float: left;
+    font-size: 12px;
+}
+.forumtopic .title .manage {
+    float: right;
+    text-align: right;
+}
+.forumtopic .title .manage a {
+    color: #F3F3F3;
+}
+.forumtopic .topicheader {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-bottom: 1px solid #6A6A6A;
+    height: 16px;
+    padding: 5px;
+}
+.forumtopic .topicheader .topicoptions, .topicfooter .topicoptions {
+    float: right;
+    text-align: right;
+}
+.forumtopic .topicheader .topicoptions a, .topicfooter .topicoptions a {
+    font-weight: 700;
+}
+.forumtopic .posts {
+}
+.topicfooter {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-top: 1px solid #6A6A6A;
+    height: 16px;
+    padding: 5px;
+}
+.forumtopic .pager, .topicfooter .pager {
+    text-align: left;
+}
+.forumpost {
+    border-bottom: 1px solid #E3E3E3;
+}
+.postinfo {
+    border-right: 1px solid #F3F3F3;
+    float: left;
+    height: 100%;
+    padding: 5px;
+    width: 170px;
+}
+.postinfo .manage {
+    line-height: 20px;
+}
+.postinfo .manage a {
+    color: #555555;
+    font-weight: 700;
+}
+.postinfo .userinfo {
+    padding-top: 5px;
+}
+.postinfo .userinfo a.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.postinfo .userinfo span.username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.postinfo .userinfo .avatar {
+    margin: 5px 0;
+}
+.postinfo .userinfo .avatar .avatar-img {
+    border: 2px solid #CEDBE1 !important;
+}
+.postinfo .userinfo .userstats {
+    color: #555555;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-align: left;
+}
+.postinfo .userinfo .userstats .statvalue {
+    font-weight: 400;
+}
+.postcontent {
+    border-left: 1px solid #F3F3F3;
+    margin-left: 180px;
+}
+.postcontent .posttime {
+    background: none repeat scroll 0 0 #E3F3F3;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 3px;
+}
+.postcontent .posttime .statvalue {
+    font-weight: 400;
+}
+.postcontent .postbody {
+    padding: 3px;
+}
+.postcontent .postbody a {
+    color: #3664A5;
+    text-decoration: underline;
+}
+.postcontent .postbody .posttext {
+}
+.postcontent .postbody .posttext .quote {
+    background-color: #FFFFFF;
+    border: 1px dashed #000000;
+    padding: 5px;
+}
+.postcontent .signature {
+    border-color: #DDDDDD;
+    border-style: solid;
+    border-width: 1px 0 0;
+    font-size: 90%;
+    font-style: italic;
+    margin: 1em 8px 8px;
+    padding: 1em 0 20px;
+    text-align: left;
+}
+.forumsearchbox {
+    float: right;
+    font-size: 0.9em;
+    padding: 5px 0;
+    text-align: right;
+}
+.forumsearch {
+}
+.forumsearch .forum-search-panel {
+}
+.forumsearch .forum-search-panel .page-title {
+    border-bottom: 0 none;
+}
+.forumsearch .forum-search-panel .search-input {
+}
+.forumsearch .forum-search-panel .search-error {
+    color: Red;
+}
+.forumsearch .forum-search-panel .search-results {
+}
+.forum-search-panel table.basic-search, .forum-search-panel table.adv-search {
+    border-collapse: collapse;
+    color: #333333;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+.forum-search-panel table.adv-search {
+    border-top: 1px solid #D3D3D3;
+    margin: 10px 0 0;
+}
+.forum-search-panel table.adv-search td.title {
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+    width: 130px;
+}
+.forum-search-panel table.adv-search td.data {
+    padding: 4px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.forumsearch .topicsgroup {
+}
+.forumsearch table.topics {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.forumsearch table.topics td {
+    padding: 3px 0;
+}
+.forumsearch table.topics tr.forumheader {
+    font-weight: 700;
+}
+.forumsearch table.topics tr.forumheader td {
+    background: none repeat scroll 0 0 #7692B9;
+    border-right: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    height: 20px;
+}
+.forumsearch table.topics tr.forumheader td.topicname {
+    padding-left: 3px;
+    text-align: left;
+    width: 55%;
+}
+.forumsearch table.topics tr.forumheader td.replies {
+    width: 10%;
+}
+.forumsearch table.topics tr.forumheader td.views {
+    width: 10%;
+}
+.forumsearch table.topics tr.forumheader td.lastpost {
+    width: 25%;
+}
+.forumsearch table.topics tr.topic td {
+    border-bottom: 1px solid #C5C5C5;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.forumsearch table.topics tr.topic td.image div {
+    background: url("images/ico-forum.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forumsearch table.topics tr.topic td.topicname {
+    text-align: left;
+    width: 55%;
+}
+.forumsearch table.topics tr.topic td.topicname .topictype {
+    font-size: 0.9em;
+    line-height: 18px;
+}
+.forumsearch table.topics tr.topic td.topicname .topictitle {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 18px;
+}
+.forumsearch table.topics tr.topic td.topicname .topicstarter {
+    color: #555555;
+    font-size: 0.9em;
+}
+.forumsearch table.topics tr.topic td.lastpost {
+    color: #555555;
+    font-size: 0.8em;
+}
+.forumsearch table.topics tr.topic .post {
+    background: url("images/ico-forum-post.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forumsearch table.topics tr.topic .postannoucement, .forumsearch table.topics tr.topic .poststicky {
+    background: url("images/ico-forum-post-high.gif") no-repeat scroll 40% 40% transparent;
+    height: 36px;
+    text-align: left;
+    width: 36px;
+}
+.forumsearch .pager {
+    padding: 5px 3px 5px 0;
+    text-align: right;
+}
+.profile-page {
+}
+.profile-page .title {
+    background: none repeat scroll 0 0 #7692B9;
+    border: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    font-weight: 700;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 3px;
+}
+.profile-page .body {
+    margin-top: 15px;
+}
+.profile-page .body .profile-info-box {
+    border-bottom: 1px solid #E3E3E3;
+}
+.profile-page .body .profile-info-box, .profile-page .body .user-last-posts {
+    font-size: 12px;
+}
+.profile-page .body .profile-info-box .title {
+}
+.profile-page .body .profile-info-box .profile-stat {
+    font-weight: 700;
+    padding: 2px;
+}
+.profile-page .body .profile-info-box .profile-stat .profile-stat-value {
+    color: #555555;
+    font-weight: 400;
+}
+.profile-page .body .profile-info-box .user-details {
+    border-right: 1px solid #F3F3F3;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+}
+.profile-page .body .profile-info-box .user-details .avatar {
+    margin-bottom: 5px;
+}
+.profile-page .body .profile-info-box .user-details .avatar .avatar-img {
+    border: 2px solid #CEDBE1 !important;
+}
+.profile-page .body .profile-info-box .user-stats {
+    border-left: 1px solid #F3F3F3;
+    margin-left: 200px;
+    padding: 10px;
+}
+.profile-page .body .profile-info-box .user-stats .section-title {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.profile-page .body .user-last-posts {
+}
+.profile-page .body .user-last-posts .topic {
+    border: 1px solid #F3F3F3;
+    margin-bottom: 10px;
+}
+.profile-page .body .user-last-posts .topictitle {
+    background: none repeat scroll 0 0 #E3F3F3;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 3px;
+}
+.profile-page .body .user-last-posts .topicbody {
+    padding: 10px;
+}
+.profile-page .body .user-last-posts .topicbody a {
+    color: #3664A5;
+    text-decoration: underline;
+}
+.profile-page .body .user-last-posts .topicbody .quote {
+    background-color: #FFFFFF;
+    border: 1px dashed #000000;
+    padding: 5px;
+}
+.profile-page .body .user-last-posts .topicdata {
+    background: none repeat scroll 0 0 #F3F3F3;
+    color: #555555;
+    font-size: 0.9em;
+    padding: 3px;
+}
+.profile-page .body .user-last-posts .posts-table {
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    empty-cells: show;
+    width: 100%;
+}
+.toolbar {
+    display: inline;
+    padding: 2px;
+}
+.toolbar .button {
+    background: url("images/bbeditor-button-bg.gif") repeat-x scroll 0 0 transparent;
+    border: 1px solid #CEC6B5;
+    margin-right: 2px;
+    padding: 2px;
+}
+.toolbar .button:hover {
+    border: 1px solid #333333;
+}
+.activediscussionspage {
+}
+.activediscussions .activediscussionstitle {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.activediscussions .activediscussionstitle .viewall {
+    float: right;
+    text-align: right;
+}
+.activediscussions .topicsgroup {
+}
+.activediscussions table.topics {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+.activediscussions table.topics td {
+    padding: 3px 0;
+}
+.activediscussions table.topics tr.activediscussionsheader {
+    font-weight: 700;
+}
+.activediscussions table.topics tr.activediscussionsheader td {
+    background: none repeat scroll 0 0 #7692B9;
+    border-right: 1px solid #6A6A6A;
+    color: #FFFFFF;
+    height: 20px;
+}
+.activediscussions table.topics tr.activediscussionsheader td.topicname {
+    padding-left: 3px;
+    text-align: left;
+    width: 55%;
+}
+.activediscussions table.topics tr.activediscussionsheader td.replies {
+    width: 10%;
+}
+.activediscussions table.topics tr.activediscussionsheader td.views {
+    width: 10%;
+}
+.activediscussions table.topics tr.activediscussionsheader td.lastpost {
+    width: 25%;
+}
+.activediscussions table.topics tr.topic td {
+    border-bottom: 1px solid #C5C5C5;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.activediscussions table.topics tr.topic td.topicname {
+    text-align: left;
+    width: 55%;
+}
+.activediscussions table.topics tr.topic td.topicname .topictitle {
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 18px;
+}
+.activediscussions table.topics tr.topic td.topicname .topicstarter {
+    color: #555555;
+    font-size: 0.9em;
+}
+.activediscussions table.topics tr.topic td.topicname .topicspager {
+    color: #555555;
+    font-size: 0.9em;
+}
+.activediscussions table.topics tr.topic td.lastpost {
+    color: #555555;
+    font-size: 0.8em;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.csharpcode, .csharpcode pre {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Consolas,"Courier New",Courier,Monospace;
+    font-size: small;
+}
+.csharpcode pre {
+    margin: 0;
+}
+.csharpcode .rem {
+    color: green;
+}
+.csharpcode .kwrd {
+    color: #0000FF;
+}
+.csharpcode .str {
+    color: #006080;
+}
+.csharpcode .op {
+    color: #0000C0;
+}
+.csharpcode .preproc {
+    color: #CC6633;
+}
+.csharpcode .asp {
+    background-color: #FFFF00;
+}
+.csharpcode .html {
+    color: maroon;
+}
+.csharpcode .attr {
+    color: red;
+}
+.csharpcode .alt {
+    background-color: #F4F4F4;
+    margin: 0;
+    width: 100%;
+}
+.csharpcode .lnum {
+    color: #606060;
+}
