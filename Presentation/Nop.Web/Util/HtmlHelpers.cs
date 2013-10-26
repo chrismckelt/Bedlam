@@ -220,6 +220,11 @@ namespace System.Web
 
         }
 
+        public static bool IsHomePage()
+        {
+            return HttpContext.Current.Request.Path == @"/";
+        }
+
         public static Product GetProduct(int productId)
         {
             var products = HttpRuntime.Cache["AllProducts"] as IList<Product>;

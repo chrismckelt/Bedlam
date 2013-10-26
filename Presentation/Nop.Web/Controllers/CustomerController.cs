@@ -788,6 +788,7 @@ namespace Nop.Web.Controllers
             {
                 case UserRegistrationType.Disabled:
                     resultText = _localizationService.GetResource("Account.Register.Result.Disabled");
+                    Response.Redirect("~/OnePageCheckout");
                     break;
                 case UserRegistrationType.Standard:
                     resultText = _localizationService.GetResource("Account.Register.Result.Standard");

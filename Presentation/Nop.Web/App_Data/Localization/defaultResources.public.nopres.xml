@@ -2325,7 +2325,7 @@
     <LocaleResource Name="Information">
         <Value>Information</Value>
     </LocaleResource>
-    <LocaleResource Name="Languages">
+    <LocaleResource Name="Languages">f
         <Value>Languages</Value>
     </LocaleResource>
     <LocaleResource Name="Manufacturers">

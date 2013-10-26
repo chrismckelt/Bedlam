@@ -1836,6 +1836,11 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Themes\Bedlam\Views\Common\HeaderLinks.cshtml" />
+    <Content Include="Themes\Bedlam\Views\Catalog\_ProductBox.cshtml" />
+    <Content Include="Themes\Bedlam\Views\Catalog\HomepageCategories.cshtml" />
+    <Content Include="Themes\Bedlam\Views\Catalog\HomepageProducts.cshtml" />
+    <Content Include="Themes\Bedlam\Views\ShoppingCart\_DiscountBox.cshtml" />
+    <Content Include="Themes\Bedlam\Views\Shared\_CreateOrUpdateAddress.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -1863,16 +1868,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>15536</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2451/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

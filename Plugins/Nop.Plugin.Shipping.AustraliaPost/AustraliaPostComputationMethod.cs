@@ -190,21 +190,21 @@ namespace Nop.Plugin.Shipping.AustraliaPost
                 //case "EXP_PLT":
                 //    serviceName = "Express Parcels Platinum";
                 //    break;
-                //case "Air":
-                //    serviceName = "Air Mail";
-                //    break;
-                //case "Sea":
-                //    serviceName = "Sea Mail";
-                //    break;
-                //case "ECI_D":
-                //    serviceName = "Express Courier International Document";
-                //    break;
-                //case "ECI_M":
-                //    serviceName = "Express Courier International Merchandise";
-                //    break;
-                //case "EPI":
-                //    serviceName = "Express Post International";
-                //    break;
+                case "Air":
+                    serviceName = "Air Mail";
+                    break;
+                case "Sea":
+                    serviceName = "Sea Mail";
+                    break;
+                case "ECI_D":
+                    serviceName = "Express Courier International Document";
+                    break;
+                case "ECI_M":
+                    serviceName = "Express Courier International Merchandise";
+                    break;
+                case "EPI":
+                    serviceName = "Express Post International";
+                    break;
                 default:
                     //not found. return service type
                     serviceName = type;

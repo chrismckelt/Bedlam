@@ -21,7 +21,9 @@
             <img alt="@Model.DefaultPictureModel.AlternateText" src="@Model.DefaultPictureModel.ImageUrl" title="@Model.DefaultPictureModel.Title" />
         </a>
     </div>
-    <div class="details">
+    @if (!HtmlHelpers.IsHomePage())
+    {
+        <div class="details">
         <h2 class="product-title">
             <a href="@Url.RouteUrl("Product", new { SeName = Model.SeName })">@Model.Name</a>
         </h2>
@@ -39,9 +41,12 @@
                 </div>
             </div>
         }
-        <div class="description">
+        @if (!string.IsNullOrWhiteSpace(Model.ShortDescription))
+        {
+         <div class="description">
             @Html.Raw(Model.ShortDescription)
         </div>
+        }
         <div class="add-info">
             <div class="prices">
                 @if (!String.IsNullOrEmpty(Model.ProductPrice.OldPrice))
@@ -60,4 +65,5 @@
             @Html.Widget("productbox_add_info")
         </div>
     </div>
+    }
 </div>
