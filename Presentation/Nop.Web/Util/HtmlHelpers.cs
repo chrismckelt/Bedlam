@@ -228,7 +228,6 @@ namespace System.Web
         public static Product GetProduct(int productId)
         {
             var products = HttpRuntime.Cache["AllProducts"] as IList<Product>;
-
            
             if (products == null)
             {
@@ -245,6 +244,46 @@ namespace System.Web
 
             return products.SingleOrDefault(a=>a.Id == productId);
 
+        }
+
+        public static List<ManufacturerBriefInfoModel> GetManufacturersWithMostProducts()
+        {
+            var list = HttpRuntime.Cache["MansWithTheMostProds"] as List<ManufacturerBriefInfoModel>;
+            if (list == null)
+            {
+                list = new List<ManufacturerBriefInfoModel>();
+
+                Task.Run(() =>
+                    {
+                        //select m.name, count(m.name) from [dbo].[Manufacturer] m inner join [dbo].[Product_Manufacturer_Mapping] pm on m.id = pm.[ManufacturerId] inner join [dbo].[Product] p on p.id = pm.[ProductId] where m.published = 1 and m.deleted =0 group by m.name order by count(m.name) desc
+                        var mansWithTheMostProds = new List<string>()
+                            {
+                                "Kas Australia Pty Ltd",
+                                "Linen House Pty Ltd",
+                                "Gingerlilly Pty Ltd",
+                                "Dehub Pty Ltd",
+                                "DCI International Pty Ltd"
+                            };
+                        var ms = EngineContext.Current.Resolve<IManufacturerService>();
+                        var manufacturers = ms.GetAllManufacturers();
+
+                        foreach (var manufacturer in manufacturers)
+                        {
+                            var modelMan = new ManufacturerBriefInfoModel()
+                                {
+                                    Id = manufacturer.Id,
+                                    Name = manufacturer.GetLocalized(x => x.Name),
+                                    SeName = manufacturer.GetSeName(),
+                                    IsActive = true,
+                                };
+                            if (mansWithTheMostProds.Contains(modelMan.Name))
+                                list.Add(modelMan);
+                        }
+
+                        HttpRuntime.Cache["MansWithTheMostProds"] = list;
+                    });
+            }
+            return list;
         }
 
         public static Category GetCategory(int categoryId)

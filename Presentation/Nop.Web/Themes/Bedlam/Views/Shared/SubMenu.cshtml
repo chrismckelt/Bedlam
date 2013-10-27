@@ -77,7 +77,7 @@
         <div class="listbox">
             <ul>
                 
-                @foreach (var item in HtmlHelpers.GetChildCategoryModels(parent.Id))
+                @foreach (var item in HtmlHelpers.GetChildCategoryModels(parent.Id).Where(b=>b.IsActive))
                 {
                     <li class="@(item.IsActive ? "active" : "inactive")"><a href="@Url.RouteUrl("Category", new {categoryId = item.Id, item.SeName})">@item.Name</a>
                     </li>

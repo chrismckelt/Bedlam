@@ -98,7 +98,7 @@
                 @T("Products.FeaturedProducts")
             </div>
             <div>
-                @(Html.DataList<ProductOverviewModel>(Model.FeaturedProducts, 2,
+                @(Html.DataList<ProductOverviewModel>(Model.FeaturedProducts, 4,
                     @<div class="item-box">
                         @Html.Partial("_ProductBox", @item)
                     </div>
@@ -143,31 +143,6 @@
     </div>
     
     @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "categorydetails_before_filters" })
-
-    @*filtering*@
-    @if (Model.PagingFilteringContext.PriceRangeFilter.Enabled ||
-        Model.PagingFilteringContext.SpecificationFilter.Enabled)
-    {
-        <div class="product-filters">
-            <div class="filter-title">
-                <span>@T("Filtering.FilterResults")</span>
-            </div>
-            @if (Model.PagingFilteringContext.PriceRangeFilter.Enabled)
-            {
-            <div class="filter-item">
-                @Html.Partial("_FilterPriceBox", Model.PagingFilteringContext.PriceRangeFilter, new ViewDataDictionary())
-            </div>
-            }
-            @if (Model.PagingFilteringContext.SpecificationFilter.Enabled)
-            {
-            <div class="filter-item">
-                @Html.Partial("_FilterSpecsBox", Model.PagingFilteringContext.SpecificationFilter, new ViewDataDictionary())
-            </div>
-            }
-        </div>
-        <div class="clear">
-        </div>
-    }    
     
     @Html.Action("WidgetsByZone", "Widget", new { widgetZone = "categorydetails_before_product_list" })    
     
@@ -190,7 +165,7 @@
         {
             @*grid mode*@
             <div class="product-grid">
-                @(Html.DataList<ProductOverviewModel>(Model.Products, 2,
+                @(Html.DataList<ProductOverviewModel>(Model.Products, 4,
                     @<div class="item-box">
                         @Html.Partial("_ProductBox", @item)
                     </div>
